@@ -79,16 +79,17 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Petite ombre pour mieux ressortir sur divers arrière-plans */
 }
 
-/* Add this CSS to make the navbar sticky */
-.header-navigation-area {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky; /* Standard sticky position */
-    top: 0; /* Navbar will stick at the top */
-    z-index: 1000; /* Ensures it stays on top of other content */
-    background-color: transparent; /* Background color for the sticky navbar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+
+/* Add these styles in your CSS file */
+.navbar-transparent {
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+.navbar-white {
+    background-color: white; /* White background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
 
 </style>
 
@@ -147,7 +148,7 @@
                                 <!-- logo -->
                                 <div class="logo">
                                     <a href="index-6.html">
-                                        <img src="assets/img/LOGO-WHITE.svg" style="min-height:65px" class="img-fluid" alt="">
+                                        <img src="assets/img/LOGO-WHITE.svg" style="min-height:80px" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="header-contact-info"></div>
@@ -1464,7 +1465,7 @@
         </div>
         <!--====================  End of search overlay  ====================-->
         <!--====================  scroll top ====================-->
-        <a href="#" class="scroll-top" id="scroll-top">
+        <a href="#" class="scroll-top show" id="scroll-top">
             <i class="ion-android-arrow-up"></i>
         </a>
         <!--====================  End of scroll top  ====================-->
@@ -1784,6 +1785,26 @@
     video.play();
 }
 
+
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.header-navigation-area');
+            
+            if (window.scrollY <= 250) {
+                navbar.classList.add('navbar-transparent');
+                navbar.classList.remove('navbar-white');
+            } else {
+                navbar.classList.add('navbar-white');
+                navbar.classList.remove('navbar-transparent');
+            }
+        });
+    
+        // Initialize with transparent class
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.header-navigation-area');
+            navbar.classList.add('navbar-transparent');
+        });
     </script>
     
 </body>
