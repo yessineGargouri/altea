@@ -71,6 +71,16 @@
     background-color: white; /* White background */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
+.navbar-transparent .logob {
+display: none;
+}
+
+.navbar-white .logob {
+    position: static; /* Position par défaut pour le placer dans la navbar */
+    transform: none; /* Réinitialiser le transform */
+    margin: 0; /* Ajuster les marges si besoin */
+}
+
 </style>
 
 </head>
@@ -268,7 +278,7 @@
                         <!-- header navigation -->
                         <div class="header-navigation header-navigation--header-default position-relative">
                             <div>
-                                <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px; display: none;" class="img-fluid logo">
+                                <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px;" class="img-fluid logob">
                             </div>
                             <div class="header-navigation__nav header-navigation__nav--transparent position-static">
                                 <nav>
@@ -1400,6 +1410,7 @@
     <script>
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.header-navigation-area');
+            const logo = document.querySelector('.logob'); // Sélectionner le logo
             
             if (window.scrollY <= 250) {
                 navbar.classList.add('navbar-transparent');
