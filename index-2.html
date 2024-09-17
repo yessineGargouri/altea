@@ -91,6 +91,17 @@
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+.navbar-transparent .logob {
+display: none;
+}
+
+.navbar-white .logob {
+    position: static; /* Position par défaut pour le placer dans la navbar */
+    transform: none; /* Réinitialiser le transform */
+    margin: 0; /* Ajuster les marges si besoin */
+}
+
+
 </style>
 
 
@@ -298,8 +309,9 @@
                             <!-- header navigation -->
                             <div class="header-navigation header-navigation--header-default position-relative">
                                 <div>
-                                    <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px; display: none;" class="img-fluid logo">
+                                    <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px;" class="img-fluid logob">
                                 </div>
+                                
                                 <div class="header-navigation__nav header-navigation__nav--transparent position-static">
                                     <nav>
                                         <ul>
@@ -308,10 +320,7 @@
                                             </li>
                                             <li class="has-children has-children--multilevel-submenu">
                                                 <a href="page-about.html">A PROPOS</a>
-                                                <ul class="submenu">
-                                                    <li><a href="demander-devis.html">Demander Devis</a></li>
-                                                    <li><a href="recrutement.html">Rejoignez-nous</a></li>
-                                                </ul>
+  
                                             </li>
                                             <li class="has-children has-children--multilevel-submenu">
                                                 <a href="metiers.html">NOS METIERS</a>
@@ -1775,25 +1784,27 @@
 
 
     </script>
-    <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.header-navigation-area');
-            
-            if (window.scrollY <= 250) {
-                navbar.classList.add('navbar-transparent');
-                navbar.classList.remove('navbar-white');
-            } else {
-                navbar.classList.add('navbar-white');
-                navbar.classList.remove('navbar-transparent');
-            }
-        });
-    
-        // Initialize with transparent class
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.header-navigation-area');
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.header-navigation-area');
+        const logo = document.querySelector('.logob'); // Sélectionner le logo
+        
+        if (window.scrollY <= 250) {
             navbar.classList.add('navbar-transparent');
-        });
-    </script>
+            navbar.classList.remove('navbar-white');
+        } else {
+            navbar.classList.add('navbar-white');
+            navbar.classList.remove('navbar-transparent');
+        }
+    });
+
+    // Initialize with transparent class
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.querySelector('.header-navigation-area');
+        navbar.classList.add('navbar-transparent');
+    });
+</script>
+
     
 </body>
 
