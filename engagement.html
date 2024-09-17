@@ -72,6 +72,112 @@
     border-radius: 10px; /* Utilise la même valeur que ci-dessus */
 }
 
+.section-title-area .title {
+    font-size: 2.5rem; /* Larger title font size */
+    color: #222; /* Darker title color */
+    margin-bottom: 40px; /* More space below the title */
+}
+
+.section-title-area .highlight {
+    color: #009933; /* Highlighted color */
+}
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Crop content that overflows */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    background-color: transparent; /* White background for cards */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer, bigger shadow on hover */
+}
+
+.card-body {
+    padding: 20px; /* Padding around card content */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size for titles */
+    color: #00a98f; /* Custom color for titles */
+    margin-bottom: 15px; /* Space below the title */
+    font-weight: 600; /* Bold title */
+    margin-left: 33%;
+}
+
+.card-text {
+    color: #666; /* Softer color for text */
+    line-height: 1.8; /* Better line spacing */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #00a98f; /* Custom primary color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* More padding for buttons */
+    font-size: 1rem; /* Larger font size */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    margin-left: 40%;
+}
+
+.btn-primary:hover {
+    background-color: #00a98f !important; /* Darker shade on hover */
+}
+
+/* Collapse Content Styles */
+.collapse {
+    padding: 10px 15px; /* Padding around collapse content */
+    background-color: #f9f9f9; /* Light background for collapse content */
+    border-left: 3px solid #009933; /* Accent border on the left */
+    margin-top: 10px; /* Space between collapsed content and button */
+    border-radius: 5px; /* Rounded corners for collapsed content */
+}
+
+/* List Styles */
+.list-unstyled li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 0.95rem; /* Smaller font size for list items */
+}
+
+.list-unstyled li:before {
+    content: "●"; /* Custom bullet point */
+    color: #009933; /* Bullet color */
+    display: inline-block; /* Inline display for bullet */
+    width: 1rem; /* Width of bullet */
+    margin-right: 8px; /* Space after bullet */
+    font-size: 1.2rem; /* Larger bullet size */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title-area .title {
+        font-size: 2rem; /* Smaller title on smaller screens */
+    }
+
+    .card {
+        margin-bottom: 20px; /* More space between cards */
+    }}
+
+
+    /* Updated Card Hover Styles */
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Bigger and softer shadow on hover */
+}
+
+/* Add these styles in your CSS file */
+.navbar-transparent {
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-white {
+    background-color: white; /* White background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
 
 </style>
 
@@ -116,12 +222,12 @@
     </div>
     <!--====================  End of preloader  ====================-->
     <!--====================  header area ====================-->
-    <div class="header-area header-area--blue header-sticky header-area--absolute" style="position:relative">
-        <div class="header-area__desktop">
+    <!--====================  header area ====================-->
+    <div class="header-area header-area--transparent header-sticky header-area--absolute">
+        <div class="header-area__desktop header-area__desktop--default">
             <!--=======  header top area  =======-->
-            <div class="header-top-area overlay">
+            <div class="header-top-area">
                 <div class="container">
-
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="header-right">
@@ -137,25 +243,19 @@
                                         <span class="selected-lang">ENG <i class="ion-chevron-down"></i></span>
                                     </a>
                                     <ul class="language-dropdown">
-                                        <li><a href="#"><img src="assets/img/icons/fr.png" class="img-fluid" alt="">
-                                                FR</a></li>
-                                        <li><a href="#"><img src="assets/img/icons/de.png" class="img-fluid" alt="">
-                                                DE</a></li>
+                                        <li><a href="#"><img src="assets/img/icons/fr.png" class="img-fluid" alt=""> FR</a></li>
+                                        <li><a href="#"><img src="assets/img/icons/de.png" class="img-fluid" alt=""> DE</a></li>
                                     </ul>
                                 </div>
                                 <div class="get-quote-btn-wrapper">
-                                    <a href="demander-devis.html"
-                                        class="ht-btn ht-btn--transparent ht-btn--transparent--white">GET A
-                                        QUOTE <i class="ion-arrow-right-c"></i></a>
+                                    <a href="demander-devis.html" class="ht-btn ht-btn--transparent ht-btn--transparent--white">GET A QUOTE <i class="ion-arrow-right-c"></i></a>
                                 </div>
                             </div>
                             <div class="header-top-wrapper">
-
                                 <!-- logo -->
                                 <div class="logo">
                                     <a href="index-6.html">
-                                        <img src="assets/img/LOGO-WHITE.svg" style="min-height:65px" class="img-fluid"
-                                            alt="">
+                                        <img src="assets/img/LOGO-WHITE.svg" style="min-height:80px" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="header-contact-info"></div>
@@ -171,8 +271,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">+216 20 041 620</h6>
-                                                    <p class="header-info-single-item__subtitle cambi ">Departement
-                                                        d'achat</p>
+                                                    <p class="header-info-single-item__subtitle">Departement d'achat</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,7 +283,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">+216 20 041 620 </h6>
-                                                    <p class="header-info-single-item__subtitle cambi">RH</p>
+                                                    <p class="header-info-single-item__subtitle">RH</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -196,7 +295,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">24/24 H</h6>
-                                                    <p class="header-info-single-item__subtitle cambi">7/7</p>
+                                                    <p class="header-info-single-item__subtitle">7/7</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -209,8 +308,7 @@
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">BP 469, 3000 SFAX,
                                                         TUNISIE</h6>
-                                                    <p class="header-info-single-item__subtitle cambi">Route de Tunis Km
-                                                        15
+                                                    <p class="header-info-single-item__subtitle">Route de Tunis Km 15
                                                         Sidi Salah</p>
                                                 </div>
                                             </div>
@@ -223,8 +321,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">+216 20 041 620</h6>
-                                                    <p class="header-info-single-item__subtitle cambi">Departement
-                                                        d'achat</p>
+                                                    <p class="header-info-single-item__subtitle">Departement d'achat</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,7 +333,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">+216 20 041 620 </h6>
-                                                    <p class="header-info-single-item__subtitle cambi">RH</p>
+                                                    <p class="header-info-single-item__subtitle">RH</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -248,7 +345,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">24/24 H</h6>
-                                                    <p class="header-info-single-item__subtitle cambi">7/7</p>
+                                                    <p class="header-info-single-item__subtitle">7/7</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -261,8 +358,7 @@
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">BP 469, 3000 SFAX,
                                                         TUNISIE</h6>
-                                                    <p class="header-info-single-item__subtitle cambi">Route de Tunis Km
-                                                        15
+                                                    <p class="header-info-single-item__subtitle">Route de Tunis Km 15
                                                         Sidi Salah</p>
                                                 </div>
                                             </div>
@@ -275,8 +371,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">+216 20 041 620</h6>
-                                                    <p class="header-info-single-item__subtitle cambi">Departement
-                                                        d'achat</p>
+                                                    <p class="header-info-single-item__subtitle">Departement d'achat</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -288,7 +383,7 @@
                                                 </div>
                                                 <div class="header-info-single-item__content">
                                                     <h6 class="header-info-single-item__title">+216 20 041 620 </h6>
-                                                    <p class="header-info-single-item__subtitle cambi">RH</p>
+                                                    <p class="header-info-single-item__subtitle">RH</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -296,267 +391,124 @@
                                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                 </div>
                             </div>
-
-                            <!-- header right -->
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--=======  End of header top area  =======-->
-
-        <!--=======  header navigation area  =======-->
-        <div class="header-navigation-area header-navigation-area--transparent-bg ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- header navigation -->
-                        <div class="header-navigation header-navigation--header-default position-relative">
-                            <div> <img src="assets/img/LOGO-ALTEA.svg"
-                                    style="min-height:65px;margin-bottom: 10px;margin-top: 8px;display: none;"
-                                    class="img-fluid logo">
-                            </div>
-                            <div class="header-navigation__nav header-navigation__nav--transparent position-static">
-                                <nav>
-                                    <ul>
-                                        <li class="has-children">
-                                            <a href="index-2.html">ACCEUIL</a>
-
-                                        </li>
-                                        <li class="has-children has-children--multilevel-submenu">
-                                            <a href="page-about.html">A PROPOS</a>
-                                            <ul class="submenu ">
-                                                <li><a href="demander-devis.html">Demander Devis</a></li>
-                                                <li><a href="recrutement.html">Rejoignez-nous</a></li>
-                                            </ul>
-
-                                        </li>
-                                        <li class="has-children has-children--multilevel-submenu">
-                                            <a href="metiers.html">NOS METIERS</a>
-                                            <ul class="submenu ">
-                                                <li><a href="case-studies-grid-caption.html">Prépresse</a></li>
-                                                <li><a href="case-studies-grid-caption-2.html">Impression</a></li>
-                                                <li><a href="case-studies-grid.html">Complexage</a></li>
-                                                <li><a href="case-study-single-slider.html">Enduction</a>
-                                                </li>
-                                                <li><a href="case-study-single-gallery.html">Découpe</a>
-                                                </li>
-                                                <li><a href="case-study-single-gallery.html">Sleeve</a>
-                                                </li>
-                                            </ul>
-                                            <!-- <ul class="megamenu megamenu--tab">
-                                            <li class="megamenu--tab__menu bg-img bg-img--menu" data-bg="assets/img/banner/decor.jpg">
-                                                <nav>
-                                                    <div class="nav nav-tabs flex-column" id="nav-tab" role="tablist">
-                                                        <a class="nav-item nav-link active" id="item1-tab" data-bs-toggle="tab" href="#item1" role="tab" aria-selected="true">Industries Layout</a>
-                                                        <a class="nav-item nav-link" id="item2-tab" data-bs-toggle="tab" href="#item2" role="tab" aria-selected="false">Industries
-                                                            Served</a>
-                                                    </div>
-                                                </nav>
+            <!--=======  End of header top area  =======-->
+    
+            <!--=======  header navigation area banner =======-->
+            <div class="header-navigation-area sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- header navigation -->
+                            <div class="header-navigation header-navigation--header-default position-relative">
+                                <div>
+                                    <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px; display: none;" class="img-fluid logo">
+                                </div>
+                                <div class="header-navigation__nav header-navigation__nav--transparent position-static">
+                                    <nav>
+                                        <ul>
+                                            <li class="has-children">
+                                                <a href="index-2.html">ACCEUIL</a>
                                             </li>
-                                            <li class="megamenu--tab__content tab-content">
-                                                <div class="tab-pane show active" id="item1" role="tabpanel" aria-labelledby="item1-tab">
-                                                    <ul class="megamenu-tab-wrapper">
-                                                        <li>
-                                                            <h2 class="page-list-title">Grid</h2>
-                                                            <ul>
-                                                                <li><a href="industries-grid.html">Industries Grid 1</a>
-                                                                </li>
-                                                                <li><a href="industries-grid-2.html">Industries Grid
-                                                                        2</a></li>
-                                                                <li><a href="industries-grid-3.html">Industries Grid
-                                                                        3</a></li>
-                                                                <li><a href="industries-grid-4.html">Industries Grid
-                                                                        4</a></li>
-                                                                <li><a href="industries-grid-5.html">Industries Grid
-                                                                        5</a></li>
-                                                                <li><a href="industries-grid-6.html">Industries Grid
-                                                                        6</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <h2 class="page-list-title">Carousel</h2>
-                                                            <ul>
-                                                                <li><a href="industries-carousel.html">Industries
-                                                                        Carousel 1</a></li>
-                                                                <li><a href="industries-carousel-2.html">Industries
-                                                                        Carousel 2</a></li>
-                                                                <li><a href="industries-carousel-3.html">Industries
-                                                                        Carousel 3</a></li>
-                                                                <li><a href="industries-carousel-4.html">Industries
-                                                                        Carousel 4</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <div class="menu-widget">
-                                                                <div class="menu-widget__image">
-                                                                    <img src="assets/img/banner/about-500x286.jpg" class="img-fluid" alt="">
-                                                                </div>
-                                                                <div class="menu-widget__content">
-                                                                    <h2 class="menu-widget__title">About Tractor
-                                                                        Industrial</h2>
-                                                                    <p class="menu-widget__short-desc">Our expertise and
-                                                                        global reach help promote safety and health for
-                                                                        the planet and its..</p>
-                                                                    <a href="page-about.html" class="menu-widget__link">SEE MORE <i
-                                                                        class="ion-arrow-right-c"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane" id="item2" role="tabpanel" aria-labelledby="item2-tab">
-                                                    <ul class="menu-item-list-desc">
-                                                        <li class="menu-item-list-desc__single">
-                                                            <h6 class="title"><a href="#">Automotive Manufacturing</a>
-                                                            </h6>
-                                                            <p class="desc">Our expertise and global reach help promote
-                                                                safety and health for the planet and its inhabitants.
-                                                            </p>
-                                                        </li>
-                                                        <li class="menu-item-list-desc__single">
-                                                            <h6 class="title"><a href="#">Bridge construction</a></h6>
-                                                            <p class="desc">Our expertise and global reach help promote
-                                                                safety and health for the planet and its inhabitants.
-                                                            </p>
-                                                        </li>
-                                                        <li class="menu-item-list-desc__single">
-                                                            <h6 class="title"><a href="#">Industrial construction</a>
-                                                            </h6>
-                                                            <p class="desc">Our expertise and global reach help promote
-                                                                safety and health for the planet and its inhabitants.
-                                                            </p>
-                                                        </li>
-                                                        <li class="menu-item-list-desc__single">
-                                                            <h6 class="title"><a href="#">Mechanical engineering</a>
-                                                            </h6>
-                                                            <p class="desc">Our expertise and global reach help promote
-                                                                safety and health for the planet and its inhabitants.
-                                                            </p>
-                                                        </li>
-                                                        <li class="menu-item-list-desc__single">
-                                                            <h6 class="title"><a href="#">Oil & gas energy</a></h6>
-                                                            <p class="desc">Our expertise and global reach help promote
-                                                                safety and health for the planet and its inhabitants.
-                                                            </p>
-                                                        </li>
-                                                        <li class="menu-item-list-desc__single">
-                                                            <h6 class="title"><a href="#">Chemical research</a></h6>
-                                                            <p class="desc">Our expertise and global reach help promote
-                                                                safety and health for the planet and its inhabitants.
-                                                            </p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul> -->
-                                        </li>
-                                        <li class="has-children has-children--multilevel-submenu">
-                                            <a href="produits.html">NOS PRODUITS</a>
-                                            <ul class="submenu">
-                                                <li><a href="case-studies-grid-caption.html">Opércules</a></li>
-                                                <li><a href="case-studies-grid-caption-2.html">Bandroles</a></li>
-                                                <li><a href="case-studies-grid.html">Etiquettes</a></li>
-                                                <li><a href="case-study-single-slider.html">Sleeves</a>
-                                                </li>
-                                                <li><a href="case-study-single-gallery.html">Complexes</a>
-                                                </li>
-                                                <li><a href="case-study-single-gallery.html">Produits non imprimés</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="has-children">
-                                            <a href="marchers.html">NOS MARCHES</a>
-                                            <ul class="megamenu megamenu--mega">
-                                                <li>
-                                                    <h2 class="page-list-title">Page list 01</h2>
-                                                    <ul>
-                                                        <li><a href="page-about.html">Laitier</a></li>
-                                                        <li><a href="page-about-2.html">Biscuits & Confiserie</a></li>
-                                                        <li><a href="page-contact.html">Boissons</a></li>
-                                                        <li><a href="page-contact-2.html">Chips & Snacks</a></li>
-                                                        <li><a href="404.html">Pâtes & Céréales</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <h2 class="page-list-title">Page list 02</h2>
-                                                    <ul>
-                                                        <li><a href="page-about.html">Hygiène</a></li>
-                                                        <li><a href="page-about-2.html">Thé & Café</a></li>
-                                                        <li><a href="page-contact.html">Pâtisserie</a></li>
-                                                        <li><a href="page-contact-2.html">Transformateurs</a></li>
-                                                    </ul>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="has-children has-children--multilevel-submenu">
-                                            <a href="#">NOS ENGAGEMENTS</a>
-
-                                        </li>
-                                        <!-- <li class="has-children">
-                                        <a href="#">CONTACTEZ </a>
-                                        <ul class="megamenu megamenu--mega">
-                                            <li>
-                                                <h2 class="page-list-title">Blog layouts 01</h2>
-                                                <ul>
-                                                    <li><a href="blog-list.html">Blog List</a></li>
-                                                    <li><a href="blog-metro.html">Blog Metro</a></li>
+                                            <li class="has-children has-children--multilevel-submenu">
+                                                <a href="page-about.html">A PROPOS</a>
+                                                <ul class="submenu">
+                                                    <li><a href="demander-devis.html">Demander Devis</a></li>
+                                                    <li><a href="recrutement.html">Rejoignez-nous</a></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <h2 class="page-list-title">Blog layouts 02</h2>
-                                                <ul>
-                                                    <li><a href="blog-grid-classic.html">Blog Grid Classic 1</a></li>
-                                                    <li><a href="blog-grid-classic-2.html">Blog Grid Classic 2</a></li>
-                                                    <li><a href="blog-grid-classic-3.html">Blog Grid Classic 3</a></li>
-                                                    <li><a href="blog-grid-classic-4.html">Blog Grid Classic 4</a></li>
-                                                    <li><a href="blog-grid-classic-5.html">Blog Grid Classic 5</a></li>
-                                                    <li><a href="blog-grid-simple.html">Blog Grid Simple</a></li>
+                                            <li class="has-children has-children--multilevel-submenu">
+                                                <a href="metiers.html">NOS METIERS</a>
+                                                <ul class="submenu">
+                                                    <li><a href="case-studies-grid-caption.html">Prépresse</a></li>
+                                                    <li><a href="case-studies-grid-caption-2.html">Impression</a></li>
+                                                    <li><a href="case-studies-grid.html">Complexage</a></li>
+                                                    <li><a href="case-study-single-slider.html">Enduction</a></li>
+                                                    <li><a href="case-study-single-gallery.html">Découpe</a></li>
+                                                    <li><a href="case-study-single-gallery.html">Sleeve</a></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <h2 class="page-list-title">Blog layouts 03</h2>
-                                                <ul>
-                                                    <li><a href="blog-carousel.html">Blog Carousel</a></li>
-                                                    <li><a href="blog-carousel-2.html">Blog Carousel 2</a></li>
-                                                    <li><a href="blog-carousel-3.html">Blog Carousel 3</a></li>
-                                                    <li><a href="blog-carousel-4.html">Blog Carousel 4</a></li>
-                                                    <li><a href="blog-carousel-5.html">Blog Carousel 5</a></li>
+                                            <li class="has-children has-children--multilevel-submenu">
+                                                <a href="produits.html">NOS PRODUITS</a>
+                                                <ul class="submenu">
+                                                    <li><a href="case-studies-grid-caption.html">Opércules</a></li>
+                                                    <li><a href="case-studies-grid-caption-2.html">Bandroles</a></li>
+                                                    <li><a href="case-studies-grid.html">Etiquettes</a></li>
+                                                    <li><a href="case-study-single-slider.html">Sleeves</a></li>
+                                                    <li><a href="case-study-single-gallery.html">Complexes</a></li>
+                                                    <li><a href="case-study-single-gallery.html">Produits non imprimés</a></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <h2 class="page-list-title">Single Blog</h2>
-                                                <ul>
-                                                    <li><a href="blog-post-image.html">Image format</a></li>
-                                                    <li><a href="blog-post-gallery.html">Gallery format</a></li>
-                                                    <li><a href="blog-post-video.html">Video format</a></li>
-                                                    <li><a href="blog-post-audio.html">Audio format</a></li>
-                                                    <li><a href="blog-post-link.html">Link format</a></li>
-                                                    <li><a href="blog-post-quote.html">Quote format</a></li>
+                                            <li class="has-children">
+                                                <a href="marchers.html">NOS MARCHES</a>
+                                                <ul class="megamenu megamenu--mega">
+                                                    <li>
+                                                        <h2 class="page-list-title">Laitier</h2>
+                                                        <ul>
+                                                            <li><a href="page-about.html">Yaourt</a></li>
+                                                            <li><a href="page-about-2.html">Lait</a></li>
+                                                            <li><a href="page-contact.html">Beurre</a></li>
+                                                            <li><a href="page-contact-2.html">Fromages</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h2 class="page-list-title">Agroalimentaire</h2>
+                                                        <ul>
+                                                            <li><a href="page-about.html">Biscuits & Confiserie</a></li>
+                                                            <li><a href="page-about-2.html">Pâtes & Céréales</a></li>
+                                                            <li><a href="page-contact.html">Snacks</a></li>
+                                                            <li><a href="page-contact-2.html">Pâtisserie</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h2 class="page-list-title">Boissons</h2>
+                                                        <ul>
+                                                            <li><a href="page-about.html">Eau et Sodas</a></li>
+                                                            <li><a href="page-about-2.html">Café, Thé</a></li>
+                                                            <li><a href="page-contact.html">Lait en poudre</a></li>
+                                                            <li><a href="page-contact-2.html">Boissons instantanées</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h2 class="page-list-title">Hygiène</h2>
+                                                        <ul>
+                                                            <li><a href="page-about.html">Produits de soin</a></li>
+                                                            <li><a href="page-about-2.html">Produits ménagers</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h2 class="page-list-title">Non Imprimé</h2>
+                                                        <ul>
+                                                            <li><a href="page-about.html">Film Plastique</a></li>
+                                                            <li><a href="page-about-2.html">Sac en Papier</a></li>
+                                                        </ul>
+                                                    </li>
                                                 </ul>
+                                            </li>
+                                            <li class="has-children has-children--multilevel-submenu">
+                                                <a href="engagement.html">NOS ENGAGEMENTS</a>
                                             </li>
                                         </ul>
-                                    </li> -->
-                                    </ul>
-                                </nav>
-                            </div>
-
-                            <div class="header-navigation__icon header-navigation__icon--transparent">
-
-
+                                    </nav>
+                                </div>
+    
+                    <div class="header-navigation__icon header-navigation__icon--transparent">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--=======  End of header navigation area =======-->
         </div>
-        <!--=======  End of header navigation area =======-->
     </div>
+    
+            <!--=======  mobile menu  =======-->
+
     <div class="header-area__mobile">
-        <!--=======  mobile menu  =======-->
         <div class="mobile-menu-area">
             <div class="container">
                 <div class="row align-items-center">
@@ -607,158 +559,474 @@
     </div>
     </div>
     <!--====================  End of header area  ====================-->
+    <!--====================  hero slider area ====================-->
+    <div class="hero-slider-area">
+        <div id="rev_slider_8_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="home-06"
+            data-source="gallery"
+            style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;height:100vh!important;">
+            <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
+            <div id="rev_slider_8_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7"
+                data-fullscreenaligncenter="on" data-fullscreen="on">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-22" data-transition="random" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                        data-masterspeed="default" data-thumb="assets/img/banner/1.png" data-rotate="0"
+                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/banner/1.png" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-resizeme" id="slide-22-layer-3" data-x="['left','left','left','left']"
+                            data-hoffset="['222','169','171','102']" data-y="['top','top','top','top']"
+                            data-voffset="['377','361','417','349']" data-fontsize="['80','70','60','45']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight:
+                            700; color: #ffffff; letter-spacing: 0px; font-family:Roboto;">
+                            Altea Packaging
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption tp-resizeme" id="slide-22-layer-2" data-x="['left','left','left','left']"
+                            data-hoffset="['222','168','170','102']" data-y="['top','top','top','top']"
+                            data-voffset="['468','452','488','397']" data-fontsize="['80','70','60','45']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight:
+                            300; color: #ffffff; letter-spacing: 0px; font-family:Roboto;">
+                            élargit son offre d’opercules avec l’AluPET
+                        </div>
+
+
+
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-22-layer-7"
+                            data-x="['left','left','left','left']" data-hoffset="['173','132','135','70']"
+                            data-y="['top','top','top','top']" data-voffset="['391','376','437','373']" data-width="4"
+                            data-height="['150','150','120','90']" data-whitespace="nowrap" data-type="shape"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":900,"speed":890,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 8;background-color:rgb(0,169,143);"> </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-22-layer-8"
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="60"
+                            data-height="full" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 9;background-color:rgb(17,17,17);"> </div>
+
+                        <!-- LAYER NR. 6 -->
+
+                        <div class="tp-caption   tp-resizeme" id="slide-22-layer-9"
+                            data-x="['left','left','left','left']" data-hoffset="['-84','-84','-84','-84']"
+                            data-y="['top','top','top','top']" data-voffset="['179','179','179','179']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10;left: 10px;white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 700; color: rgb(0,169,143); letter-spacing: 5px;font-family:Roboto;text-transform:uppercase; padding:19px">
+                            altea packaging </div>
+
+
+                        <!-- LAYER NR. 7 -->
+                        <a class="tp-caption TM-Button-flat-01 rev-btn  tp-resizeme  primary-background-color-important secondary-background-color-hover-important"
+                            href="#" target="_self" id="slide-22-layer-4" data-x="['left','left','left','left']"
+                            data-hoffset="['222','166','169','102']" data-y="['top','top','top','top']"
+                            data-voffset="['652','635','662','565']"
+                            data-color="['rgb(255,255,255)','rgb(34,34,34)','rgb(34,34,34)','rgb(34,34,34)']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                            data-actions='' data-responsive_offset="on"
+                            data-frames='[{"delay":1900,"speed":830,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(0,0,0);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[17,17,17,17]"
+                            data-paddingright="[30,30,30,30]" data-paddingbottom="[17,17,17,17]"
+                            data-paddingleft="[30,30,30,30]"
+                            style="z-index: 11; white-space: nowrap; color: #ffffff; letter-spacing: 0.5px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;text-decoration: none;">READ
+                            MORE </a>
+                    </li>
+
+
+                    <!-- SLIDE  -->
+                    <li data-index="rs-22-1" data-transition="random" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                        data-masterspeed="default" data-thumb="assets/img/banner/2.png" data-rotate="0"
+                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/banner/2.png" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 8 -->
+                        <!-- LAYER NR. 8 - "Une large gamme de produits" -->
+                        <div class="tp-caption tp-resizeme" id="slide-221-layer-3"
+                            data-x="['left','left','left','left']" data-hoffset="['255','169','171','102']"
+                            data-y="['top','top','top','top']" data-voffset="['377','361','417','349']" 
+                            data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight:
+                            700; color: rgb(255,255,255); letter-spacing: 0px; font-family:Roboto;">
+                             Une large gamme de produits
+                        </div>
+
+                        <!-- LAYER NR. 9 - "adaptés à vos besoins" -->
+                        <div class="tp-caption tp-resizeme" id="slide-221-layer-2"
+                            data-x="['left','left','left','left']" data-hoffset="['255','168','170','102']"
+                            data-y="['top','top','top','top']" data-voffset="['468','452','488','397']" 
+                            data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight:
+                            300; color: rgb(255,255,255); letter-spacing: 0px; font-family:Roboto;">
+                             adaptés à vos besoins
+                        </div>
+
+
+
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-7"
+                            data-x="['left','left','left','left']" data-hoffset="['222','168','170','102']"
+                            data-y="['top','top','top','top']" data-voffset="['377','361','417','349']" data-width="4"
+                            data-height="['150','150','120','90']" data-whitespace="nowrap" data-type="shape"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":900,"speed":890,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 8;background-color:rgb(0,169,143);"> </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-8"
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="60"
+                            data-height="full" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 9;background-color:rgb(17,17,17);"> </div>
+
+                        <!-- LAYER NR. 13 -->
+
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-9"
+                            data-x="['left','left','left','left']" data-hoffset="['-84','-84','-84','-84']"
+                            data-y="['top','top','top','top']" data-voffset="['179','179','179','179']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; left: 10px;white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 700; color: rgb(0,169,143); letter-spacing: 5px;font-family:Roboto;text-transform:uppercase;padding:19px;">
+                            Altea Packaging</div>
+
+
+                        <!-- LAYER NR. 14 -->
+                        <a class="tp-caption TM-Button-flat-01 rev-btn  tp-resizeme  primary-background-color-important secondary-background-color-hover-important"
+                            href="#" target="_self" id="slide-221-layer-5" data-x="['left','left','left','left']"
+                            data-hoffset="['222','166','169','102']" data-y="['top','top','top','top']"
+                            data-voffset="['652','635','662','565']"
+                            data-color="['rgb(255,255,255)','rgb(34,34,34)','rgb(34,34,34)','rgb(34,34,34)']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                            data-actions='' data-responsive_offset="on"
+                            data-frames='[{"delay":1900,"speed":830,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(0,0,0);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[17,17,17,17]"
+                            data-paddingright="[30,30,30,30]" data-paddingbottom="[17,17,17,17]"
+                            data-paddingleft="[30,30,30,30]"
+                            style="z-index: 11; white-space: nowrap; color: rgb(255,255,255); letter-spacing: 0.5px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;text-decoration: none;">READ
+                            MORE </a>
+                    </li>
+                    <!-- Nouveau SLIDE avec image 3.png -->
+                    <li data-index="rs-22-2" data-transition="random" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                        data-masterspeed="default" data-thumb="assets/img/banner/3.png" data-rotate="0"
+                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/banner/3.png" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-3"
+                            data-x="['left','left','left','left']" data-hoffset="['222','169','171','102']"
+                            data-y="['top','top','top','top']" data-voffset="['468','452','488','397']"
+                            data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 700; color: rgb(255,255,255); letter-spacing: 0px;font-family:Roboto;">
+                             40 ans au service de nos clients</div>
+                            
+
+                            
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-2"
+                            data-x="['left','left','left','left']" data-hoffset="['222','168','170','102']"
+                            data-y="['top','top','top','top']" data-voffset="['377','361','417','349']"
+                            data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 300; color: rgb(255,255,255); letter-spacing: 0px;font-family:Roboto;">
+                            Une expertise technique de plus que </div>
+
+
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-7"
+                            data-x="['left','left','left','left']" data-hoffset="['173','132','135','70']"
+                            data-y="['top','top','top','top']" data-voffset="['391','376','437','373']" data-width="4"
+                            data-height="['150','150','120','90']" data-whitespace="nowrap" data-type="shape"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":900,"speed":890,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 8;background-color:rgb(0,169,143);"> </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-8"
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="60"
+                            data-height="full" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 9;background-color:rgb(17,17,17);"> </div>
+
+                        <!-- LAYER NR. 13 -->
+
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-9"
+                            data-x="['left','left','left','left']" data-hoffset="['-84','-84','-84','-84']"
+                            data-y="['top','top','top','top']" data-voffset="['179','179','179','179']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; left: 10px;white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 700; color: rgb(0,169,143); letter-spacing: 5px;font-family:Roboto;text-transform:uppercase;padding:19px;">
+                            Altea Packaging</div>
+
+
+                        <!-- LAYER NR. 14 -->
+                        <a class="tp-caption TM-Button-flat-01 rev-btn  tp-resizeme  primary-background-color-important secondary-background-color-hover-important"
+                            href="#" target="_self" id="slide-221-layer-5" data-x="['left','left','left','left']"
+                            data-hoffset="['222','166','169','102']" data-y="['top','top','top','top']"
+                            data-voffset="['652','635','662','565']"
+                            data-color="['rgb(255,255,255)','rgb(34,34,34)','rgb(34,34,34)','rgb(34,34,34)']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                            data-actions='' data-responsive_offset="on"
+                            data-frames='[{"delay":1900,"speed":830,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(0,0,0);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[17,17,17,17]"
+                            data-paddingright="[30,30,30,30]" data-paddingbottom="[17,17,17,17]"
+                            data-paddingleft="[30,30,30,30]"
+                            style="z-index: 11; white-space: nowrap; color: rgb(255,255,255); letter-spacing: 0.5px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;text-decoration: none;">READ
+                            MORE </a>
+                    </li>
+
+                    <li data-index="rs-22-3" data-transition="random" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                        data-masterspeed="default" data-thumb="assets/img/banner/4.png" data-rotate="0"
+                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/banner/4.png" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-3"
+                            data-x="['left','left','left','left']" data-hoffset="['222','169','171','102']"
+                            data-y="['top','top','top','top']" data-voffset="['468','452','488','397']"
+                            data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 700; color: rgb(255,255,255); letter-spacing: 0px;font-family:Roboto;">
+                            développement durable </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-2"
+                            data-x="['left','left','left','left']" data-hoffset="['222','168','170','102']"
+                            data-y="['top','top','top','top']" data-voffset="['377','361','417','349']"
+                            data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 300; color: rgb(255,255,255); letter-spacing: 0px;font-family:Roboto;">
+                            Un groupe engagé dans le</div>
+                            
+
+                            
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-7"
+                            data-x="['left','left','left','left']" data-hoffset="['173','132','135','70']"
+                            data-y="['top','top','top','top']" data-voffset="['391','376','437','373']" data-width="4"
+                            data-height="['150','150','120','90']" data-whitespace="nowrap" data-type="shape"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":900,"speed":890,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 8;background-color:rgb(0,169,143);"> </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-8"
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="60"
+                            data-height="full" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 9;background-color:rgb(17,17,17);"> </div>
+
+                        <!-- LAYER NR. 13 -->
+
+                        <div class="tp-caption   tp-resizeme" id="slide-221-layer-9"
+                            data-x="['left','left','left','left']" data-hoffset="['-84','-84','-84','-84']"
+                            data-y="['top','top','top','top']" data-voffset="['179','179','179','179']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; left: 10px;white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 700; color: rgb(0,169,143); letter-spacing: 5px;font-family:Roboto;text-transform:uppercase;padding:19px;">
+                            Altea Packaging</div>
+
+
+                        <!-- LAYER NR. 14 -->
+                        <a class="tp-caption TM-Button-flat-01 rev-btn  tp-resizeme  primary-background-color-important secondary-background-color-hover-important"
+                            href="#" target="_self" id="slide-221-layer-5" data-x="['left','left','left','left']"
+                            data-hoffset="['222','166','169','102']" data-y="['top','top','top','top']"
+                            data-voffset="['652','635','662','565']"
+                            data-color="['rgb(255,255,255)','rgb(34,34,34)','rgb(34,34,34)','rgb(34,34,34)']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                            data-actions='' data-responsive_offset="on"
+                            data-frames='[{"delay":1900,"speed":830,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(0,0,0);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[17,17,17,17]"
+                            data-paddingright="[30,30,30,30]" data-paddingbottom="[17,17,17,17]"
+                            data-paddingleft="[30,30,30,30]"
+                            style="z-index: 11; white-space: nowrap; color: rgb(255,255,255); letter-spacing: 0.5px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;text-decoration: none;">READ
+                            MORE </a>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+
+            </div>
+        </div><!-- END REVOLUTION SLIDER -->
+    </div>
+    <!--====================  End of hero slider area  ====================-->
+
+    <!--====================  End of header area  ====================-->
     <div class="gutter bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <!-- section title -->
-                <div class="section-title-area section-space--bottom--30">
-                    <h2 class="title title--style4 text-center">NOS <span class="highlight">Engagements</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <!-- Section Title -->
+                    <div class="section-title-area section-space--bottom--30">
+                        <h2 class="title title--style4 text-center">NOS <span class="highlight">Engagements</span></h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="col-lg-12 order-1 order-lg-2">
-        
-        <div class="service-details-page-content">
-            <div class="service-details-text-wrapper"  >
-
-               <div class="faq-wrapper">
-
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Politique Qualité <span> <i class="ion-plus"></i>
-                                        <i class="ion-minus"></i> </span>
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion" style="border: none; padding: 20px; font-family: Arial, sans-serif;">
-                                <div class="card-body">
-                                    <p style="line-height: 1.6; color: #555;">
-                                        Dans le cadre de notre démarche de performance et d’amélioration continue, notre système de management intégré Qualité, Hygiène, Sécurité des denrées alimentaires, Santé Sécurité au travail et Environnement, conformément aux normes respectives ISO 9001, FSSC 22000, HALAL, SMETA et URSA s’affirme comme un outil de gestion efficace conduisant à l’amélioration continue de la qualité de nos produits, de leur intégrité sanitaire, de la santé et sécurité du personnel et de nos performances environnementales via notre service rendu à nos clients.
-                                    </p>
-                                    <p style="line-height: 1.6; color: #555; margin-top: 20px;">
-                                        Notre vision QHSE s’articule autour des axes suivants:
-                                    </p>
-                                    <ul style="list-style-type: none; padding-left: 0;  line-height: 1.8; margin-top: 20px;">
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            La satisfaction des besoins de nos clients et de leurs attentes implicites et explicites
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            La conformité à la réglementation et autres exigences légales applicables
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            La Réduction des coûts, tout en préservant notre organisation efficace et efficiente
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            L’amélioration des compétences du personnel et son savoir-faire vers la culture QHSE
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            L’implication de nos fournisseurs en tant que partenaires
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            La prévention des risques industriels liés au personnel, aux biens et services
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Offre de Services Complète <span> <i class="ion-plus"></i>
-                                        <i class="ion-minus"></i> </span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Une gamme complète de services à votre portée : du service prépresse à la livraison de vos emballages. Nous fournissons des services sur mesure. Dossiers, visuels et emballages de nos clients sont pris en charge totalement par notre service Prépresse de la réception du CD, l'ok de gravure des cylindres pour assurer une usinabilité parfaite de tous les travaux qui nous sont soumis, jusque sur la machine chez le client. Notre offre de service intégre également des propositions proactives de développement de nouvelles solutions vous apportant qualité et économie.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Qualité & Certifications <span> <i class="ion-plus"></i>
-                                        <i class="ion-minus"></i> </span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion" style="border: none; padding: 20px; font-family: Arial, sans-serif;">
-                                <div class="card-body">
-                                    <p style="line-height: 1.6; color: #555;">
-                                        Depuis sa naissance, le Groupe s’est engagé dans une démarche de certification afin de s’assurer que ses règles et leur mise en pratique sont conformes aux normes internationales les plus strictes.
-                                    </p>
-                                    <ul style="list-style-type: none; padding-left: 0; margin-top: 20px; line-height: 1.8;">
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            ISO 9001
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            FSSC 22000
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            HALAL
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            SMETA
-                                        </li>
-                                        <li style="display: flex; align-items: center;">
-                                            <span style="color: #009933; font-size: 18px; margin-right: 8px;">●</span> 
-                                            URSA
-                                        </li>
-                                    </ul>
-                                    
-                                    <h4 style="margin-top: 30px; font-weight: bold; color: #222;">ALTEA est membre Sedex</h4>
-                                    <p style="line-height: 1.6; color: #555;">
-                                        Sedex est une organisation à but non lucratif ayant pour vocation d’encourager les pratiques d’entreprises éthiques et responsables dans les chaînes d’approvisionnement mondiales.
-                                    </p>
-                                    <p style="line-height: 1.6; color: #555;">
-                                        Grâce à son système en ligne, Sedex nous permet de recueillir et d’analyser des informations sur les pratiques commerciales éthiques et responsables dans notre chaîne d’approvisionnement. Elle nous permet aussi de partager des informations à caractère éthique avec une multiplicité de nos clients.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Environnement <span> <i class="ion-plus"></i>
-                                        <i class="ion-minus"></i> </span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Le groupe Altea Packaging veille à respecter son engagement vis-à-vis des principes du développement durable et à la participation active de ses sites de production pour la réduction de l’empreinte</p>
-                                    <p> environnementale. Ceci se fait à travers: la gestion de ses déchets et leur valorisation, l’économie de l’énergie, l’amélioration de la qualité de l’air ainsi que la maîtrise des rejets en eaux usées.</p>
-                                </div>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Politique Qualité</h5>
+                            <p class="card-text">Dans le cadre de notre démarche de performance et d’amélioration continue, notre système de management intégré Qualité, Hygiène...</p>
+                            <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Lire Plus</button>
+                            <div id="collapseOne" class="collapse mt-3">
+                                <p class="card-text">Notre vision QHSE s’articule autour des axes suivants...</p>
+                                <ul class="list-unstyled">
+                                    <li>La satisfaction des besoins de nos clients...</li>
+                                    <li>La conformité à la réglementation...</li>
+                                    <li>La Réduction des coûts...</li>
+                                    <li>L’amélioration des compétences du personnel...</li>
+                                    <li>L’implication de nos fournisseurs en tant que partenaires...</li>
+                                    <li>La prévention des risques industriels liés au personnel...</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-left: 20%;">Offre de Services Complète</h5>
+                            <p class="card-text">Une gamme complète de services à votre portée : du service prépresse à la livraison de vos emballages...</p>
+                            <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Lire Plus</button>
+                            <div id="collapseTwo" class="collapse mt-3">
+                                <p class="card-text">Dossiers, visuels et emballages de nos clients sont pris en charge totalement par notre service Prépresse...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-left: 25%;">Qualité & Certifications</h5>
+                            <p class="card-text">Depuis sa naissance, le Groupe s’est engagé dans une démarche de certification afin de s’assurer que ses règles...</p>
+                            <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Lire Plus</button>
+                            <div id="collapseThree" class="collapse mt-3">
+                                <ul class="list-unstyled">
+                                    <li>ISO 9001</li>
+                                    <li>FSSC 22000</li>
+                                    <li>HALAL</li>
+                                    <li>SMETA</li>
+                                    <li>URSA</li>
+                                </ul>
+                                <h4>ALTEA est membre Sedex</h4>
+                                <p>Sedex est une organisation à but non lucratif ayant pour vocation d’encourager les pratiques d’entreprises éthiques...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Environnement</h5>
+                            <p class="card-text">Le groupe Altea Packaging veille à respecter son engagement vis-à-vis des principes du développement durable...</p>
+                            <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Lire Plus</button>
+                            <div id="collapseFour" class="collapse mt-3">
+                                <p>Ceci se fait à travers: la gestion de ses déchets et leur valorisation, l’économie de l’énergie, l’amélioration de la qualité de l’air...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    
     <br><br>
 
         
@@ -1181,8 +1449,28 @@
                 $(this).addClass('active');
             });
         });
+
+        
     </script>
+     <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.header-navigation-area');
+            
+            if (window.scrollY <= 250) {
+                navbar.classList.add('navbar-transparent');
+                navbar.classList.remove('navbar-white');
+            } else {
+                navbar.classList.add('navbar-white');
+                navbar.classList.remove('navbar-transparent');
+            }
+        });
     
+        // Initialize with transparent class
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.header-navigation-area');
+            navbar.classList.add('navbar-transparent');
+        });
+    </script>
     
 </body>
 
