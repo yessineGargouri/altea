@@ -7407,12 +7407,26 @@ a.scroll-top.show {
   }
 }
 .industry-four-slider__single-slide {
+  height: 300px;
+  overflow: hidden;
   position: relative;
   background-color: #fff;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
   padding: 40px 35px 30px;
   text-align: center;
+  border-radius: 1rem;
+  animation: scaledown .2s linear;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+  transition: all 0.3s ease 0s;
+}
+.industry-four-slider__single-slide:hover{
+  animation: scale .2s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease 0s;
+
 }
 .industry-four-slider__single-slide .image {
   margin-bottom: 30px;
@@ -8759,32 +8773,23 @@ a.scroll-top.show {
 }
 .brand-logo-slider__single .image {
   -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  transition: all 0.3s ease 0s;
 }
 .brand-logo-slider__single .image-hover {
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translate(-50%, 20px);
-          transform: translate(-50%, 20px);
   -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  transition: all 0.3s ease 0s;
   position: absolute;
   top: 0;
-  left: 50%;
+  left:0;
   width: 100%;
 }
 .brand-logo-slider__single:hover .image {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-}
-.brand-logo-slider__single:hover .image-hover {
   visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  scale: 1.3;
 }
+
 
 .brand-logo-grid__single {
   border: 1px solid #eee;
