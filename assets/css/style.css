@@ -1010,6 +1010,7 @@
 html,
 body {
   height: 100%;
+
 }
 
 body {
@@ -2340,7 +2341,7 @@ only screen and (max-width: 767px) {
 }
 
 .logo a img {
-  max-width: 160px;
+  max-width: 200px;
 }
 
 .header-navigation {
@@ -3181,7 +3182,7 @@ only screen and (max-width: 767px) {
 }
 
 .social-links--style3 ul li a {
-  color: #bdbdbd;
+  color: white;
   font-size: 1.125rem;
 }
 
@@ -7037,7 +7038,7 @@ only screen and (max-width: 767px) {
 }
 
 .grey-bg--style3 {
-  background-color: #f5f6fa;
+  background-color: transparent;
 }
 
 .dark-bg {
@@ -20039,4 +20040,19 @@ only screen and (max-width: 767px) {
   font-size: 80px;
   line-height: 1;
   color: #222;
+}
+
+.grow{
+  background-color:white;
+  animation: scaledown .2s linear;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+
+}
+.grow:hover{
+  animation: scale .2s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    box-shadow: 1px 1px 33px 19px rgb(15 139 98 / 8%);
+
 }
