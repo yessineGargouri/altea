@@ -1,6 +1,6 @@
-body {
-    background-image: url(../img/pattern.svg)
-}
+/* body {
+    background-image: url(../img/bgAltea.svg)
+} */
 
 .header-area--custom {
     background-color: #00000099;
@@ -26,6 +26,20 @@ body {
 
 .img-header {
     background-image: url(../img/product.png);
+    min-height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.img-header2 {
+    background-image: url(../img/job.webp);
+    min-height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.img-header3 {
+    background-image: url(../img/bestpart/converters.jpg);
     min-height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
