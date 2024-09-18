@@ -1,6 +1,6 @@
-body {
-    background-image: url(../img/pattern.svg)
-}
+/* body {
+    background-image: url(../img/bgAltea.svg)
+} */
 
 @media only screen and (max-width:1199px){
     .header-area{
@@ -32,6 +32,20 @@ body {
 
 .img-header {
     background-image: url(../img/product2.png);
+    min-height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.img-header2 {
+    background-image: url(../img/job.webp);
+    min-height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.img-header3 {
+    background-image: url(../img/bestpart/converters.jpg);
     min-height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
