@@ -116,7 +116,11 @@ display: none;
     transform: none; /* Réinitialiser le transform */
     margin: 0; /* Ajuster les marges si besoin */
 }
-
+.ht-btn--transparent--whitee:hover {
+            background-color: #0000001d;
+            color: #ffffff;
+            border-color: #000000;
+        }
 </style>
 
 </head>
@@ -314,20 +318,21 @@ display: none;
                         <!-- header navigation -->
                         <div class="header-navigation header-navigation--header-default position-relative">
                             <div>
-                                <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px;" class="img-fluid logob">
+                                <img src="assets/img/LOGO-ALTEA.svg"
+                                    style="min-height:65px; margin-bottom: 10px; margin-top: 8px; margin-left: -60px;"
+                                    class="img-fluid logob">
                             </div>
-                            <div class="header-navigation__nav header-navigation__nav--transparent position-static">
+
+                            <div class="header-navigation__nav header-navigation__nav--transparent position-static"
+                                style="    display: flex;justify-content: center;">
                                 <nav>
                                     <ul>
-                                        <li class="has-children">
+                                        <li >
                                             <a href="index-2.html">ACCEUIL</a>
                                         </li>
-                                        <li class="has-children has-children--multilevel-submenu">
+                                        <li >
                                             <a href="page-about.html">A PROPOS</a>
-                                            <ul class="submenu">
-                                                <li><a href="demander-devis.html">Demander Devis</a></li>
-                                                <li><a href="recrutement.html">Rejoignez-nous</a></li>
-                                            </ul>
+
                                         </li>
                                         <li class="has-children has-children--multilevel-submenu">
                                             <a href="metiers.html">NOS METIERS</a>
@@ -348,7 +353,8 @@ display: none;
                                                 <li><a href="case-studies-grid.html">Etiquettes</a></li>
                                                 <li><a href="case-study-single-slider.html">Sleeves</a></li>
                                                 <li><a href="case-study-single-gallery.html">Complexes</a></li>
-                                                <li><a href="case-study-single-gallery.html">Produits non imprimés</a></li>
+                                                <li><a href="case-study-single-gallery.html">Produits non
+                                                        imprimés</a></li>
                                             </ul>
                                         </li>
                                         <li class="has-children">
@@ -378,7 +384,8 @@ display: none;
                                                         <li><a href="page-about.html">Eau et Sodas</a></li>
                                                         <li><a href="page-about-2.html">Café, Thé</a></li>
                                                         <li><a href="page-contact.html">Lait en poudre</a></li>
-                                                        <li><a href="page-contact-2.html">Boissons instantanées</a></li>
+                                                        <li><a href="page-contact-2.html">Boissons instantanées</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -397,14 +404,20 @@ display: none;
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="has-children has-children--multilevel-submenu">
+                                        <li>
                                             <a href="engagement.html">NOS ENGAGEMENTS</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
+                            <div>
+                                <a href="demander-devis.html"
+                                    style=" color: black;  margin-right: -130px;border: 2px solid #000000 !important;"
+                                    class="ht-btn ht-btn--transparent ht-btn--transparent--whitee logob">GET A QUOTE
+                                    <i class="ion-arrow-right-c"></i></a>
+                            </div>
 
-                <div class="header-navigation__icon header-navigation__icon--transparent">
+                            <div class="header-navigation__icon header-navigation__icon--transparent">
                             </div>
                         </div>
                     </div>

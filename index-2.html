@@ -49,60 +49,82 @@
 
 
 
-<style>.industry-grid-area {
-    padding: 0 20px; /* Ajoute un padding de 20px des deux côtés */
-}
+    <style>
+        .industry-grid-area {
+            padding: 0 20px;
+            /* Ajoute un padding de 20px des deux côtés */
+        }
 
-.section-title-area {
-    margin: 0 auto; /* Centre le titre */
-    text-align: center; /* Assure que le texte est centré */
-}
+        .section-title-area {
+            margin: 0 auto;
+            /* Centre le titre */
+            text-align: center;
+            /* Assure que le texte est centré */
+        }
 
-.single-industry-grid-two {
-    margin: auto; /* Ajoute une marge automatique pour centrer et un espace de 20px pour la séparation verticale */
-    width: 90%; /* Vous pouvez ajuster cette largeur selon vos besoins */
-}
+        .single-industry-grid-two {
+            margin: auto;
+            /* Ajoute une marge automatique pour centrer et un espace de 20px pour la séparation verticale */
+            width: 90%;
+            /* Vous pouvez ajuster cette largeur selon vos besoins */
+        }
 
-.banner-image-three__right {
-    position: relative; /* Permet le positionnement absolu de l'icône de lecture */
-    cursor: pointer; /* Change le curseur pour indiquer une action interactive */
-}
+        .banner-image-three__right {
+            position: relative;
+            /* Permet le positionnement absolu de l'icône de lecture */
+            cursor: pointer;
+            /* Change le curseur pour indiquer une action interactive */
+        }
 
-.play-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.7); /* Légère transparence pour voir l'image en dessous */
-    border-radius: 50%; /* Forme circulaire */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Petite ombre pour mieux ressortir sur divers arrière-plans */
-}
-
-
-/* Add these styles in your CSS file */
-.navbar-transparent {
-    background-color: transparent; /* Transparent background */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.navbar-white {
-    background-color: white; /* White background */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.navbar-transparent .logob {
-display: none;
-}
-
-.navbar-white .logob {
-    position: static; /* Position par défaut pour le placer dans la navbar */
-    transform: none; /* Réinitialiser le transform */
-    margin: 0; /* Ajuster les marges si besoin */
-}
+        .play-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.7);
+            /* Légère transparence pour voir l'image en dessous */
+            border-radius: 50%;
+            /* Forme circulaire */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            /* Petite ombre pour mieux ressortir sur divers arrière-plans */
+        }
 
 
-</style>
+        /* Add these styles in your CSS file */
+        .navbar-transparent {
+            background-color: transparent;
+            /* Transparent background */
+            transition: background-color 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .navbar-white {
+            background-color: white;
+            /* White background */
+            transition: background-color 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .navbar-transparent .logob {
+            display: none;
+        }
+
+        .navbar-white .logob {
+            position: static;
+            /* Position par défaut pour le placer dans la navbar */
+            transform: none;
+            /* Réinitialiser le transform */
+            margin: 0;
+            /* Ajuster les marges si besoin */
+        }
+
+        .ht-btn--transparent--whitee:hover {
+            background-color: #0000001d;
+            color: #ffffff;
+            border-color: #000000;
+        }
+    </style>
 
 
 
@@ -136,7 +158,7 @@ display: none;
                         <div class="col-lg-12">
                             <div class="header-right">
                                 <ul class="topbar-menu topbar-menu--bold">
-                                    <li><a href="blog-grid-classic-3.html">News &amp; Media</a></li>
+                                    <li><a href="blog-grid-classic-3.html">News </a></li>
                                     <li><a href="page-contact.html">Contacts</a></li>
                                 </ul>
                                 <div class="language-change-wrapper language-change-wrapper--style3">
@@ -147,19 +169,24 @@ display: none;
                                         <span class="selected-lang">ENG <i class="ion-chevron-down"></i></span>
                                     </a>
                                     <ul class="language-dropdown">
-                                        <li><a href="#"><img src="assets/img/icons/fr.png" class="img-fluid" alt=""> FR</a></li>
-                                        <li><a href="#"><img src="assets/img/icons/de.png" class="img-fluid" alt=""> DE</a></li>
+                                        <li><a href="#"><img src="assets/img/icons/fr.png" class="img-fluid" alt="">
+                                                FR</a></li>
+                                        <li><a href="#"><img src="assets/img/icons/de.png" class="img-fluid" alt="">
+                                                DE</a></li>
                                     </ul>
                                 </div>
                                 <div class="get-quote-btn-wrapper">
-                                    <a href="demander-devis.html" class="ht-btn ht-btn--transparent ht-btn--transparent--white">GET A QUOTE <i class="ion-arrow-right-c"></i></a>
+                                    <a href="demander-devis.html"
+                                        class="ht-btn ht-btn--transparent ht-btn--transparent--white">GET A QUOTE <i
+                                            class="ion-arrow-right-c"></i></a>
                                 </div>
                             </div>
                             <div class="header-top-wrapper">
                                 <!-- logo -->
                                 <div class="logo">
                                     <a href="index-6.html">
-                                        <img src="assets/img/LOGO-WHITE.svg" style="min-height:80px" class="img-fluid" alt="">
+                                        <img src="assets/img/LOGO-WHITE.svg"
+                                            style="min-height:80px; margin-left: -40px;" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="header-contact-info"></div>
@@ -300,7 +327,7 @@ display: none;
                 </div>
             </div>
             <!--=======  End of header top area  =======-->
-    
+
             <!--=======  header navigation area banner =======-->
             <div class="header-navigation-area sticky">
                 <div class="container">
@@ -309,18 +336,21 @@ display: none;
                             <!-- header navigation -->
                             <div class="header-navigation header-navigation--header-default position-relative">
                                 <div>
-                                    <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px; margin-bottom: 10px; margin-top: 8px;" class="img-fluid logob">
+                                    <img src="assets/img/LOGO-ALTEA.svg"
+                                        style="min-height:65px; margin-bottom: 10px; margin-top: 8px; margin-left: -60px;"
+                                        class="img-fluid logob">
                                 </div>
-                                
-                                <div class="header-navigation__nav header-navigation__nav--transparent position-static">
+
+                                <div class="header-navigation__nav header-navigation__nav--transparent position-static"
+                                    style="    display: flex;justify-content: center;">
                                     <nav>
                                         <ul>
-                                            <li class="has-children">
+                                            <li >
                                                 <a href="index-2.html">ACCEUIL</a>
                                             </li>
-                                            <li class="has-children has-children--multilevel-submenu">
+                                            <li >
                                                 <a href="page-about.html">A PROPOS</a>
-  
+
                                             </li>
                                             <li class="has-children has-children--multilevel-submenu">
                                                 <a href="metiers.html">NOS METIERS</a>
@@ -341,7 +371,8 @@ display: none;
                                                     <li><a href="case-studies-grid.html">Etiquettes</a></li>
                                                     <li><a href="case-study-single-slider.html">Sleeves</a></li>
                                                     <li><a href="case-study-single-gallery.html">Complexes</a></li>
-                                                    <li><a href="case-study-single-gallery.html">Produits non imprimés</a></li>
+                                                    <li><a href="case-study-single-gallery.html">Produits non
+                                                            imprimés</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-children">
@@ -371,7 +402,8 @@ display: none;
                                                             <li><a href="page-about.html">Eau et Sodas</a></li>
                                                             <li><a href="page-about-2.html">Café, Thé</a></li>
                                                             <li><a href="page-contact.html">Lait en poudre</a></li>
-                                                            <li><a href="page-contact-2.html">Boissons instantanées</a></li>
+                                                            <li><a href="page-contact-2.html">Boissons instantanées</a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -390,14 +422,20 @@ display: none;
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="has-children has-children--multilevel-submenu">
+                                            <li>
                                                 <a href="engagement.html">NOS ENGAGEMENTS</a>
                                             </li>
                                         </ul>
                                     </nav>
                                 </div>
-    
-                    <div class="header-navigation__icon header-navigation__icon--transparent">
+                                <div>
+                                    <a href="demander-devis.html"
+                                        style=" color: black;  margin-right: -130px;border: 2px solid #000000 !important;"
+                                        class="ht-btn ht-btn--transparent ht-btn--transparent--whitee logob">GET A QUOTE
+                                        <i class="ion-arrow-right-c"></i></a>
+                                </div>
+
+                                <div class="header-navigation__icon header-navigation__icon--transparent">
                                 </div>
                             </div>
                         </div>
@@ -407,8 +445,8 @@ display: none;
             <!--=======  End of header navigation area =======-->
         </div>
     </div>
-    
-            <!--=======  mobile menu  =======-->
+
+    <!--=======  mobile menu  =======-->
 
     <div class="header-area__mobile">
         <div class="mobile-menu-area">
@@ -581,7 +619,7 @@ display: none;
                         <!-- LAYER NR. 8 - "Une large gamme de produits" -->
                         <div class="tp-caption tp-resizeme" id="slide-221-layer-3"
                             data-x="['left','left','left','left']" data-hoffset="['255','169','171','102']"
-                            data-y="['top','top','top','top']" data-voffset="['377','361','417','349']" 
+                            data-y="['top','top','top','top']" data-voffset="['377','361','417','349']"
                             data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -589,13 +627,13 @@ display: none;
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight:
                             700; color: rgb(255,255,255); letter-spacing: 0px; font-family:Roboto;">
-                             Une large gamme de produits
+                            Une large gamme de produits
                         </div>
 
                         <!-- LAYER NR. 9 - "adaptés à vos besoins" -->
                         <div class="tp-caption tp-resizeme" id="slide-221-layer-2"
                             data-x="['left','left','left','left']" data-hoffset="['255','168','170','102']"
-                            data-y="['top','top','top','top']" data-voffset="['468','452','488','397']" 
+                            data-y="['top','top','top','top']" data-voffset="['468','452','488','397']"
                             data-fontsize="['80','70','60','45']" data-width="none" data-height="none"
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":10,"speed":1800,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -603,7 +641,7 @@ display: none;
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight:
                             300; color: rgb(255,255,255); letter-spacing: 0px; font-family:Roboto;">
-                             adaptés à vos besoins
+                            adaptés à vos besoins
                         </div>
 
 
@@ -681,10 +719,10 @@ display: none;
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 700; color: rgb(255,255,255); letter-spacing: 0px;font-family:Roboto;">
-                             40 ans au service de nos clients</div>
-                            
+                            40 ans au service de nos clients</div>
 
-                            
+
+
                         <!-- LAYER NR. 9 -->
                         <div class="tp-caption   tp-resizeme" id="slide-221-layer-2"
                             data-x="['left','left','left','left']" data-hoffset="['222','168','170','102']"
@@ -784,9 +822,9 @@ display: none;
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 300; color: rgb(255,255,255); letter-spacing: 0px;font-family:Roboto;">
                             Un groupe engagé dans le</div>
-                            
 
-                            
+
+
 
                         <!-- LAYER NR. 11 -->
                         <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-221-layer-7"
@@ -840,7 +878,7 @@ display: none;
                     </li>
                 </ul>
                 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-                <div><img class="A-HOME-1-WHITE" src="assets/img/A-WHITE.svg" ></div>
+                <div><img class="A-HOME-1-WHITE" src="assets/img/A-WHITE.svg"></div>
 
             </div>
         </div><!-- END REVOLUTION SLIDER -->
@@ -852,17 +890,23 @@ display: none;
 
     <div class="banner-image-three-area bg-img">
         <div><img class="L-HOME-GREEN" src="assets/img/L-GREEN.svg" height='70'></div>
-    
+
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-6">
                     <div class="banner-image-three__left ">
                         <div class="banner-image-three__content">
                             <h4 class="subtitle">Notre Story</h4>
-                            <h3 class="title">Diriger une entreprise prospère <span class="highlight">depuis 1980</span></h3>
-                            <p class="subtitle-big">Altea Packaging est le leader des transformateurs d'emballages flexibles dans la région Maghreb & Moyen Orient, doté d'une ambition méditerranéenne.</p>
-                            <p class="text">Nous sommes un groupe de PMEs, flexibles et proactives, spécialisées dans le développement, la transformation et l'impression d'emballage...</p>
-                            <a href="page-about.html" class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">READ MORE <i class="ion-arrow-right-c"></i></a>
+                            <h3 class="title">Diriger une entreprise prospère <span class="highlight">depuis 1980</span>
+                            </h3>
+                            <p class="subtitle-big">Altea Packaging est le leader des transformateurs d'emballages
+                                flexibles dans la région Maghreb & Moyen Orient, doté d'une ambition méditerranéenne.
+                            </p>
+                            <p class="text">Nous sommes un groupe de PMEs, flexibles et proactives, spécialisées dans le
+                                développement, la transformation et l'impression d'emballage...</p>
+                            <a href="page-about.html"
+                                class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">READ
+                                MORE <i class="ion-arrow-right-c"></i></a>
                         </div>
                     </div>
                 </div>
@@ -873,9 +917,12 @@ display: none;
                                 <!-- Image qui sera remplacée par la vidéo au clic -->
                                 <img src="assets/img/8.webp" id="staticImage" class="classy img-fluid" alt="">
                                 <!-- Icône de lecture superposée -->
-                                <div class="play-icon" style="position: absolute; top: 50%; left: 60%; transform: translate(-50%, -50%); z-index: 2;">
-                                    <svg width="60" height="60" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 11.692V4.308a.5.5 0 0 1 .765-.424l6.363 3.692a.5.5 0 0 1 0 .837z"/>
+                                <div class="play-icon"
+                                    style="position: absolute; top: 50%; left: 60%; transform: translate(-50%, -50%); z-index: 2;">
+                                    <svg width="60" height="60" viewBox="0 0 16 16" class="bi bi-play-fill"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 11.692V4.308a.5.5 0 0 1 .765-.424l6.363 3.692a.5.5 0 0 1 0 .837z" />
                                     </svg>
                                 </div>
                                 <!-- Container pour la vidéo, initialement caché -->
@@ -890,9 +937,9 @@ display: none;
             </div>
         </div>
     </div>
-    
-    
-    
+
+
+
     <!--====================  End of feature background area  ====================-->
     <div class="service-title-wrapper">
         <h2 class="title">NOS <span class="highlight">PRODUITS</span></h2>
@@ -904,38 +951,38 @@ display: none;
 
     <!-- brand logo slider -->
     <div class="brand-logo-slider__container-area " style="margin: 20px;">
-        <div class="swiper-container brand-logo-slider__container col-sm-12" style="padding-bottom: 55px; padding-top: 55px;">
+        <div class="swiper-container brand-logo-slider__container col-sm-12"
+            style="padding-bottom: 55px; padding-top: 55px;">
             <div class="swiper-wrapper brand-logo-slider__wrapper">
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/Cogimix.svg" class="img-fluid img-cap" alt="">
                     </div>
-                    
+
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/complexe.svg" class="img-fluid img-cap" alt="">
                     </div>
-                    
+
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
-                        <img src="assets/img/products/etiquettes.svg"
-                            class="img-fluid img-cap" alt="">
+                        <img src="assets/img/products/etiquettes.svg" class="img-fluid img-cap" alt="">
                     </div>
-                    
+
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/bandrole.svg" class="img-fluid img-cap" alt="">
                     </div>
-                    
+
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/sleeves.svg" class="img-fluid img-cap" alt="">
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -954,7 +1001,8 @@ display: none;
         <div><img class="T-HOME-WHITE" src="assets/img/T-WHITE.svg"></div>
         <div class="row g-0">
             <div class="col-lg-12">
-                <div class="section-title-area section-title-area--middle section-title-area--middle--style2 section-space--bottom--80">
+                <div
+                    class="section-title-area section-title-area--middle section-title-area--middle--style2 section-space--bottom--80">
                     <h2 class="title">Secteurs Desservis</h2>
                     <br><br>
                     <h4 class="subtitle">NOS Marchés</h4>
@@ -962,60 +1010,80 @@ display: none;
                 <div class="single-industry-grid-two-wrapper">
                     <!-- Produits Laitiers -->
                     <div class="single-industry-grid-two">
-                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/dairy.jpg"></div>
+                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/dairy.jpg">
+                        </div>
                         <div class="single-industry-grid-two__content">
                             <div class="content-wrapper">
-                                <h2 class="title"><img src="assets/img/icons/milk.png" height="80" class="right-m"><a href="#">Produits Laitiers</a></h2>
-                                <p class="text">Optimisez la sécurité et la fraîcheur des produits laitiers avec nos solutions d'emballage innovantes qui préservent la qualité tout au long de la chaîne de distribution.</p>
+                                <h2 class="title"><img src="assets/img/icons/milk.png" height="80" class="right-m"><a
+                                        href="#">Produits Laitiers</a></h2>
+                                <p class="text">Optimisez la sécurité et la fraîcheur des produits laitiers avec nos
+                                    solutions d'emballage innovantes qui préservent la qualité tout au long de la chaîne
+                                    de distribution.</p>
                             </div>
-                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i class="ion-android-arrow-forward"></i></a>
+                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i
+                                    class="ion-android-arrow-forward"></i></a>
                         </div>
                     </div>
                     <!-- Agroalimentaire -->
                     <div class="single-industry-grid-two">
-                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/converters.jpg"></div>
+                        <div class="single-industry-grid-two__image bg-img"
+                            data-bg="assets/img/bestpart/converters.jpg"></div>
                         <div class="single-industry-grid-two__content">
                             <div class="content-wrapper">
-                                <h2 class="title"><img src="assets/img/icons/reuse-dark.png" height="80" class="right-m"><a href="#">Agroalimentaire</a></h2>
-                                <p class="text">Améliorez la conservation et la présentation de vos produits alimentaires avec nos emballages personnalisés qui répondent aux normes les plus strictes de l'industrie.</p>
+                                <h2 class="title"><img src="assets/img/icons/reuse-dark.png" height="80"
+                                        class="right-m"><a href="#">Agroalimentaire</a></h2>
+                                <p class="text">Améliorez la conservation et la présentation de vos produits
+                                    alimentaires avec nos emballages personnalisés qui répondent aux normes les plus
+                                    strictes de l'industrie.</p>
                             </div>
-                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i class="ion-android-arrow-forward"></i></a>
+                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i
+                                    class="ion-android-arrow-forward"></i></a>
                         </div>
                     </div>
                     <!-- Boissons -->
                     <div class="single-industry-grid-two">
-                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/beverages.jpg"></div>
+                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/beverages.jpg">
+                        </div>
                         <div class="single-industry-grid-two__content">
                             <div class="content-wrapper">
-                                <h2 class="title"><img src="assets/img/icons/food.png" height="80" class="right-m"><a href="#">Boissons</a></h2>
-                                <p class="text">Assurez une protection maximale et une présentation attrayante pour vos boissons avec des solutions d'emballage adaptées à chaque type de produit, des jus aux boissons gazeuses.</p>
+                                <h2 class="title"><img src="assets/img/icons/food.png" height="80" class="right-m"><a
+                                        href="#">Boissons</a></h2>
+                                <p class="text">Assurez une protection maximale et une présentation attrayante pour vos
+                                    boissons avec des solutions d'emballage adaptées à chaque type de produit, des jus
+                                    aux boissons gazeuses.</p>
                             </div>
-                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i class="ion-android-arrow-forward"></i></a>
+                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i
+                                    class="ion-android-arrow-forward"></i></a>
                         </div>
                     </div>
                     <!-- Hygiène -->
                     <div class="single-industry-grid-two">
-                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/hygiene.jpg" style='background-color:rgb(0,169,143);border: 1px solid black;align-content: center;'>
+                        <div class="single-industry-grid-two__image bg-img" data-bg="assets/img/bestpart/hygiene.jpg"
+                            style='background-color:rgb(0,169,143);border: 1px solid black;align-content: center;'>
                             <a class="autre" href="javascript;"></a>
                         </div>
                         <div class="single-industry-grid-two__content">
                             <div class="content-wrapper">
-                                <h2 class="title"><img src="assets/img/icons/shampoo.png" height="80" class="right-m"><a href="#">Hygiène</a></h2>
-                                <p class="text">Renforcez la sécurité et l'hygiène de vos produits avec des emballages spécialement conçus pour résister aux conditions rigoureuses tout en garantissant l'intégrité du produit.</p>
+                                <h2 class="title"><img src="assets/img/icons/shampoo.png" height="80" class="right-m"><a
+                                        href="#">Hygiène</a></h2>
+                                <p class="text">Renforcez la sécurité et l'hygiène de vos produits avec des emballages
+                                    spécialement conçus pour résister aux conditions rigoureuses tout en garantissant
+                                    l'intégrité du produit.</p>
                             </div>
-                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i class="ion-android-arrow-forward"></i></a>
+                            <a href="service-details.html" class="post-readmore-btn"> <span>READ MORE</span> <i
+                                    class="ion-android-arrow-forward"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
+
+
     <!--====================  End of industry grid area  ====================-->
 
     <div class="industry-four-slider__area grey-bg" style="padding-top: 120px;">
-        <div><img class="E-HOME-WHITE"src="assets/img/E-WHITE.svg" height='70'></div>
+        <div><img class="E-HOME-WHITE" src="assets/img/E-WHITE.svg" height='70'></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -1260,502 +1328,500 @@ display: none;
         </div>
     </div>
 
-    
-<!--====================  footer area ====================-->
-<div class="footer-area section-space--inner--top--60 dark-bg--style5" >
-    <div><img class="P-GREEN" src="assets/img/P-GREEN.svg" height='70'></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-content-wrapper">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <!-- footer intro wrapper -->
-                            <div class="footer-intro-wrapper">
-                                <div class="footer-logo">
-                                    <a href="#">
-                                        <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px"
-                                            class="img-fluid" alt="">
-                                    </a>
+
+    <!--====================  footer area ====================-->
+    <div class="footer-area section-space--inner--top--60 dark-bg--style5">
+        <div><img class="P-GREEN" src="assets/img/P-GREEN.svg" height='70'></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <!-- footer intro wrapper -->
+                                <div class="footer-intro-wrapper">
+                                    <div class="footer-logo">
+                                        <a href="#">
+                                            <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="footer-desc footer-desc--style2">
+                                        Altea Packaging est un leader des emballages flexibles au Maghreb et au
+                                        Moyen-Orient, regroupant des PME agiles spécialisées dans le développement et
+                                        l'impression de solutions d'emballage.
+                                    </div>
+                                    <a href="#" class="see-more-link see-more-link--style3"
+                                        style="color: #000000ab;">Voir Plus <i
+                                            class="ion-android-arrow-forward"></i></a>
+
+
+
                                 </div>
-                                <div class="footer-desc footer-desc--style2">
-                                    Altea Packaging est un leader des emballages flexibles au Maghreb et au Moyen-Orient, regroupant des PME agiles spécialisées dans le développement et l'impression de solutions d'emballage.
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <!-- footer widget -->
+                                <div class="footer-widget">
+                                    <h4 class="footer-widget__title footer-widget__title--style2">CONTACT US</h4>
+                                    <ul class="footer-widget__navigation footer-widget__navigation--address">
+                                        <li><i class="ion-android-map"></i> RTE DE TUNIS KM 15 Z.I. - 3091 - SIDI
+                                            SALAH
+                                            - Sfax - Tunisie</li>
+                                        <li><i class="ion-ios-telephone"></i> (+216) 74 273 032</li>
+
+                                        <li><i class="ion-android-mail"></i> contact@altea-packaging.com</li>
+                                    </ul>
                                 </div>
-                                <a href="#" class="see-more-link see-more-link--style3" style="color: #000000ab;" >Voir Plus <i
-                                        class="ion-android-arrow-forward"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <!-- footer widget -->
+                                <div class="footer-widget">
+                                    <h4 class="footer-widget__title footer-widget__title--style2">QUICKS LINKS</h4>
+                                    <ul class="footer-widget__navigation footer-widget__navigation--style2">
+                                        <li><a href="#">ACCEUIL</a></li>
+                                        <li><a href="#">A propos</a></li>
 
-
-
+                                        <li><a href="metiers.html">Nos Metiers</a></li>
+                                        <li><a href="#">Nos Produits</a></li>
+                                        <li><a href="#">Nos Marchés</a></li>
+                                        <li><a href="engagement.html">Nos Engagements</a></li>
+                                        <li><a href="#">Contactez-nous</a></li>
+                                        <li><a href="#">Postulez-maintenant</a></li>
+                                        <li><a href="#">Demander Devis</a></li>
+                                        <li><a href="#">News & Media</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <!-- footer widget -->
+                                <div class="footer-widget">
+                                    <h4 class="footer-widget__title footer-widget__title--style2">NEWSLETTER</h4>
+                                    <div class="footer-widget__newsletter">
+                                        <form id="mc-form" class="mc-form">
+                                            <input type="email" placeholder="Enter your email">
+                                            <button type="submit"
+                                                class="ht-btn ht-btn--default ht-btn--default--style3 border-0">SIGN
+                                                UP</button>
+                                        </form>
+                                        <!-- mailchimp-alerts Start -->
+                                        <div class="mailchimp-alerts">
+                                            <div class="mailchimp-submitting"></div>
+                                            <!-- mailchimp-submitting end -->
+                                            <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                            <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                                        </div>
+                                        <!-- mailchimp-alerts end -->
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <!-- footer widget -->
-                                    <div class="footer-widget">
-                                        <h4 class="footer-widget__title footer-widget__title--style2">CONTACT US</h4>
-                                        <ul class="footer-widget__navigation footer-widget__navigation--address">
-                                            <li><i class="ion-android-map"></i> RTE DE TUNIS KM 15 Z.I. - 3091 - SIDI
-                                                SALAH
-                                                - Sfax - Tunisie</li>
-                                            <li><i class="ion-ios-telephone"></i> (+216) 74 273 032</li>
-
-                                            <li><i class="ion-android-mail"></i> contact@altea-packaging.com</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright-wrapper">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-copyright-left">
+                                    &copy;
+                                    <script>document.write(new Date().getFullYear() + ' ');</script> all rights
+                                    reserved
+                                    --MarQenti
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-copyright-right">
+                                    <div class="social-links social-links--style3">
+                                        <ul>
+                                            <li><a href="//facebook.com" data-tippy="Facebook"
+                                                    data-tippy-inertia="false" data-tippy-animation="shift-away"
+                                                    data-tippy-delay="50" data-tippy-arrow="true"
+                                                    data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i
+                                                        class="ion-social-facebook"></i></a></li>
+                                            <li><a href="//linkedin.com" data-tippy="Linkedin"
+                                                    data-tippy-inertia="false" data-tippy-animation="shift-away"
+                                                    data-tippy-delay="50" data-tippy-arrow="true"
+                                                    data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i
+                                                        class="ion-social-linkedin"></i></a></li>
+                                            <li><a href="//youtube.com" data-tippy="youtube" data-tippy-inertia="false"
+                                                    data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                    data-tippy-arrow="true" data-tippy-theme="sharpborder__black"
+                                                    data-tippy-placement="top"><i class="ion-social-youtube"></i></a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <!-- footer widget -->
-                                    <div class="footer-widget">
-                                        <h4 class="footer-widget__title footer-widget__title--style2">QUICKS LINKS</h4>
-                                        <ul class="footer-widget__navigation footer-widget__navigation--style2">
-                                            <li><a href="#">ACCEUIL</a></li>
-                                            <li><a href="#">A propos</a></li>
-
-                                            <li><a href="metiers.html">Nos Metiers</a></li>
-                                            <li><a href="#">Nos Produits</a></li>
-                                            <li><a href="#">Nos Marchés</a></li>
-                                            <li><a href="engagement.html">Nos Engagements</a></li>
-                                            <li><a href="#">Contactez-nous</a></li>
-                                            <li><a href="#">Postulez-maintenant</a></li>
-                                            <li><a href="#">Demander Devis</a></li>
-                                            <li><a href="#">News & Media</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <!-- footer widget -->
-                                    <div class="footer-widget">
-                                        <h4 class="footer-widget__title footer-widget__title--style2">NEWSLETTER</h4>
-                                        <div class="footer-widget__newsletter">
-                                            <form id="mc-form" class="mc-form">
-                                                <input type="email" placeholder="Enter your email">
-                                                <button type="submit"
-                                                    class="ht-btn ht-btn--default ht-btn--default--style3 border-0">SIGN
-                                                    UP</button>
-                                            </form>
-                                            <!-- mailchimp-alerts Start -->
-                                            <div class="mailchimp-alerts">
-                                                <div class="mailchimp-submitting"></div>
-                                                <!-- mailchimp-submitting end -->
-                                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                                            </div>
-                                            <!-- mailchimp-alerts end -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-copyright-wrapper">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="footer-copyright-left">
-                                        &copy;
-                                        <script>document.write(new Date().getFullYear() + ' ');</script> all rights
-                                        reserved
-                                        --MarQenti
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="footer-copyright-right">
-                                        <div class="social-links social-links--style3">
-                                            <ul>
-                                                <li><a href="//facebook.com" data-tippy="Facebook"
-                                                        data-tippy-inertia="false" data-tippy-animation="shift-away"
-                                                        data-tippy-delay="50" data-tippy-arrow="true"
-                                                        data-tippy-theme="sharpborder__black"
-                                                        data-tippy-placement="top"><i
-                                                            class="ion-social-facebook"></i></a></li>
-                                                <li><a href="//linkedin.com" data-tippy="Linkedin"
-                                                        data-tippy-inertia="false" data-tippy-animation="shift-away"
-                                                        data-tippy-delay="50" data-tippy-arrow="true"
-                                                        data-tippy-theme="sharpborder__black"
-                                                        data-tippy-placement="top"><i
-                                                            class="ion-social-linkedin"></i></a></li>
-                                                <li><a href="//youtube.com" data-tippy="youtube"
-                                                        data-tippy-inertia="false" data-tippy-animation="shift-away"
-                                                        data-tippy-delay="50" data-tippy-arrow="true"
-                                                        data-tippy-theme="sharpborder__black"
-                                                        data-tippy-placement="top"><i
-                                                            class="ion-social-youtube"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--====================  End of footer area  ====================-->
-        <!--====================  mobile menu overlay ====================-->
-        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
-            <div class="mobile-menu-overlay__header">
-                <div class="container-fluid--cp-60">
-                    <div class="row align-items-center">
-                        <div class="col-md-4 col-sm-6 col-9">
-                            <!-- logo -->
-                            <div class="logo">
-                                <a href="index-2.html">
-                                    <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px" class="img-fluid"
-                                        alt="">
-                                </a>
-                            </div>
+    </div>
+    <!--====================  End of footer area  ====================-->
+    <!--====================  mobile menu overlay ====================-->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-overlay__header">
+            <div class="container-fluid--cp-60">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-sm-6 col-9">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="index-2.html">
+                                <img src="assets/img/LOGO-ALTEA.svg" style="min-height:65px" class="img-fluid" alt="">
+                            </a>
                         </div>
-                        <div class="col-md-8 col-sm-6 col-3">
-                            <!-- mobile menu content -->
-                            <div class="mobile-menu-content">
-                                <a class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"
-                                    href="javascript:void(0)">
-                                    <i class="ion-ios-close-empty"></i>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6 col-3">
+                        <!-- mobile menu content -->
+                        <div class="mobile-menu-content">
+                            <a class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"
+                                href="javascript:void(0)">
+                                <i class="ion-ios-close-empty"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mobile-menu-overlay__body">
-                <nav class="offcanvas-navigation">
-                    <ul>
-
-                        <li class="has-children">
-                            <a href="index-2.html">ACCEUIL</a>
-
-                        </li>
-                        <li class="has-children">
-                            <a href="#">a propos</a>
-
-                        </li>
-                        <li class="has-children">
-                            <a href="metiers.html">Nos metiers</a>
-
-                        </li>
-                        <li class="has-children has-children--multilevel-submenu">
-                            <a href="produits.html">Nos produits</a>
-
-                        </li>
-                        <li class="has-children">
-                            <a href="marchers.html">Nos marchers</a>
-                        </li>
-                        <li class="has-children">
-                            <a href="engagement.html">Nos Engagements</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </div>
-        <!--====================  End of mobile menu overlay  ====================-->
-        <!--====================  search overlay ====================-->
-        <div class="search-overlay" id="search-overlay">
-            <a id="popup-search-close" href="#" class="popup-search-close"><i class="ion-ios-close-empty"></i></a>
-            <div class="page-popup-search-inner">
-                <form action="#">
-                    <input type="text" class="search-field" id="search-field">
-                </form>
-                <p class="form-description">Hit enter to search or ESC to close</p>
-            </div>
+        <div class="mobile-menu-overlay__body">
+            <nav class="offcanvas-navigation">
+                <ul>
+
+                    <li class="has-children">
+                        <a href="index-2.html">ACCEUIL</a>
+
+                    </li>
+                    <li class="has-children">
+                        <a href="#">a propos</a>
+
+                    </li>
+                    <li class="has-children">
+                        <a href="metiers.html">Nos metiers</a>
+
+                    </li>
+                    <li class="has-children has-children--multilevel-submenu">
+                        <a href="produits.html">Nos produits</a>
+
+                    </li>
+                    <li class="has-children">
+                        <a href="marchers.html">Nos marchers</a>
+                    </li>
+                    <li class="has-children">
+                        <a href="engagement.html">Nos Engagements</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!--====================  End of search overlay  ====================-->
-        <!--====================  scroll top ====================-->
-        <a href="#" class="scroll-top show" id="scroll-top">
-            <i class="ion-android-arrow-up"></i>
-        </a>
-        <!--====================  End of scroll top  ====================-->
-        <!-- JS
+    </div>
+    <!--====================  End of mobile menu overlay  ====================-->
+    <!--====================  search overlay ====================-->
+    <div class="search-overlay" id="search-overlay">
+        <a id="popup-search-close" href="#" class="popup-search-close"><i class="ion-ios-close-empty"></i></a>
+        <div class="page-popup-search-inner">
+            <form action="#">
+                <input type="text" class="search-field" id="search-field">
+            </form>
+            <p class="form-description">Hit enter to search or ESC to close</p>
+        </div>
+    </div>
+    <!--====================  End of search overlay  ====================-->
+    <!--====================  scroll top ====================-->
+    <a href="#" class="scroll-top show" id="scroll-top">
+        <i class="ion-android-arrow-up"></i>
+    </a>
+    <!--====================  End of scroll top  ====================-->
+    <!-- JS
     ============================================ -->
 
-        <!-- Modernizer JS -->
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-        <!-- jQuery JS -->
-        <script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
 
-        <!-- Bootstrap JS -->
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-        <!-- Popper JS -->
-        <script src="assets/js/vendor/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.min.js"></script>
 
-        <!-- Swiper Slider JS -->
-        <script src="assets/js/plugins/swiper.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/plugins/swiper.min.js"></script>
 
-        <!-- Tippy JS -->
-        <script src="assets/js/plugins/tippy.min.js"></script>
+    <!-- Tippy JS -->
+    <script src="assets/js/plugins/tippy.min.js"></script>
 
-        <!-- Light gallery JS -->
-        <script src="assets/js/plugins/lightgallery.min.js"></script>
+    <!-- Light gallery JS -->
+    <script src="assets/js/plugins/lightgallery.min.js"></script>
 
-        <!-- Light gallery video JS -->
-        <script src="assets/js/plugins/lg-video.min.js"></script>
+    <!-- Light gallery video JS -->
+    <script src="assets/js/plugins/lg-video.min.js"></script>
 
-        <!-- Waypoints JS -->
-        <script src="assets/js/plugins/waypoints.min.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
 
-        <!-- Counter up JS -->
-        <script src="assets/js/plugins/counterup.min.js"></script>
+    <!-- Counter up JS -->
+    <script src="assets/js/plugins/counterup.min.js"></script>
 
-        <!-- Appear JS -->
-        <script src="assets/js/plugins/appear.min.js"></script>
+    <!-- Appear JS -->
+    <script src="assets/js/plugins/appear.min.js"></script>
 
-        <!-- Gmap3 JS -->
-        <script src="assets/js/plugins/gmap3.min.js"></script>
+    <!-- Gmap3 JS -->
+    <script src="assets/js/plugins/gmap3.min.js"></script>
 
-        <!-- Isotope JS -->
-        <script src="assets/js/plugins/isotope.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="assets/js/plugins/isotope.min.js"></script>
 
-        <!-- Mailchimp JS -->
-        <script src="assets/js/plugins/mailchimp-ajax-submit.min.js"></script>
-
-
-        <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
+    <!-- Mailchimp JS -->
+    <script src="assets/js/plugins/mailchimp-ajax-submit.min.js"></script>
 
 
-        <!-- Google Map -->
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&callback=initMap"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
-        <!-- Map JS -->
-        <script>
-            jQuery(document).ready(function ($) {
 
-                var gmMapDiv = $("#google-map-one");
+    <!-- Google Map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&callback=initMap"></script>
 
-                (
-                    function ($) {
+    <!-- Map JS -->
+    <script>
+        jQuery(document).ready(function ($) {
 
-                        if (gmMapDiv.length) {
+            var gmMapDiv = $("#google-map-one");
 
-                            var gmHeight = gmMapDiv.attr("data-height");
-                            var gmWidth = gmMapDiv.attr("data-width");
-                            var gmZoomEnable = gmMapDiv.attr("data-zoom_enable");
-                            var gmZoom = gmMapDiv.attr("data-zoom");
-                            gmMapDiv.width(gmWidth).height(gmHeight);
-                            gmMapDiv.gmap3({
-                                action: "init",
-                                marker: {
-                                    values: [{
-                                        address: "40.7590615,-73.969231",
-                                        data: "<div class=\"gmap-marker-wrap\"><h5 class=\"gmap-marker-title\">New Jersey Office<\/h5><div class=\"gmap-marker-content\"><i class=\"fa fa-map-marker\" aria-hidden=\"true\"><\/i> 799-701 Ballantyne Rd<br \/>\nSyracuse, NY 13207<\/div><\/div>",
-                                        options: {
-                                            icon: "",
-                                            visible: false,
-                                        }
-                                    }],
-                                    events: {
-                                        click: function (marker, event, context) {
-                                            if (context.data == 0) {
-                                                return;
-                                            }
-                                            var map = $(this).gmap3("get");
-                                            infowindow = $(this).gmap3({
-                                                get: {
-                                                    name: "infowindow"
-                                                }
-                                            });
-                                            if (infowindow) {
-                                                infowindow.open(map, marker);
-                                                infowindow.setContent(context.data);
-                                            } else {
-                                                $(this).gmap3({
-                                                    infowindow: {
-                                                        anchor: marker,
-                                                        options: {
-                                                            content: context.data
-                                                        }
-                                                    }
-                                                });
-                                            }
-                                        }
-                                    }
+            (
+                function ($) {
 
-                                },
-                                overlay: {
-                                    values: [{
-                                        address: "40.7590615,-73.969231",
-                                        data: "<div class=\"gmap-marker-wrap\"><h5 class=\"gmap-marker-title\">New Jersey Office<\/h5><div class=\"gmap-marker-content\"><i class=\"ion-android-pin\" aria-hidden=\"true\"><\/i> 799-701 Ballantyne Rd<br \/>\nSyracuse, NY 13207<\/div><\/div>",
-                                        options: {
-                                            content: '<div><div class="animated-dot">' +
-                                                '<div class="middle-dot"><i class="ion-android-pin"></i></div>' +
-                                                '<div class="signal"></div>' +
-                                                '<div class="signal2"></div>' + '</div></div>',
-                                        }
-                                    }],
-                                    events: {
-                                        click: function (overlay, event, context) {
-                                            if (context.data == 0) {
-                                                return;
-                                            }
-                                            var map = $(this).gmap3("get");
-                                            infowindow = $(this).gmap3({
-                                                get: {
-                                                    name: "infowindow"
-                                                }
-                                            });
-                                            if (infowindow) {
-                                                infowindow.open(map, overlay);
-                                                infowindow.setContent(context.data);
-                                            } else {
-                                                $(this).gmap3({
-                                                    infowindow: {
-                                                        anchor: overlay,
-                                                        options: {
-                                                            content: context.data
-                                                        }
-                                                    }
-                                                });
-                                            }
-                                        }
-                                    }
-                                },
-                                map: {
+                    if (gmMapDiv.length) {
+
+                        var gmHeight = gmMapDiv.attr("data-height");
+                        var gmWidth = gmMapDiv.attr("data-width");
+                        var gmZoomEnable = gmMapDiv.attr("data-zoom_enable");
+                        var gmZoom = gmMapDiv.attr("data-zoom");
+                        gmMapDiv.width(gmWidth).height(gmHeight);
+                        gmMapDiv.gmap3({
+                            action: "init",
+                            marker: {
+                                values: [{
+                                    address: "40.7590615,-73.969231",
+                                    data: "<div class=\"gmap-marker-wrap\"><h5 class=\"gmap-marker-title\">New Jersey Office<\/h5><div class=\"gmap-marker-content\"><i class=\"fa fa-map-marker\" aria-hidden=\"true\"><\/i> 799-701 Ballantyne Rd<br \/>\nSyracuse, NY 13207<\/div><\/div>",
                                     options: {
-                                        zoom: parseInt(gmZoom),
-                                        zoomControl: true,
-                                        mapTypeId: google.maps.MapTypeId.ROADMAP,
-                                        mapTypeControl: false,
-                                        scaleControl: false,
-                                        scrollwheel: gmZoomEnable == 'enable' ? true : false,
-                                        streetViewControl: false,
-                                        draggable: true,
-                                        styles: [{
-                                            "featureType": "landscape.man_made",
-                                            "elementType": "geometry",
-                                            "stylers": [{
-                                                "color": "#f7f1df"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "landscape.natural",
-                                            "elementType": "geometry",
-                                            "stylers": [{
-                                                "color": "#d0e3b4"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "landscape.natural.terrain",
-                                            "elementType": "geometry",
-                                            "stylers": [{
-                                                "visibility": "off"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "poi",
-                                            "elementType": "labels",
-                                            "stylers": [{
-                                                "visibility": "off"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "poi.business",
-                                            "elementType": "all",
-                                            "stylers": [{
-                                                "visibility": "off"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "poi.medical",
-                                            "elementType": "geometry",
-                                            "stylers": [{
-                                                "color": "#fbd3da"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "poi.park",
-                                            "elementType": "geometry",
-                                            "stylers": [{
-                                                "color": "#bde6ab"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "road",
-                                            "elementType": "geometry.stroke",
-                                            "stylers": [{
-                                                "visibility": "off"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "road",
-                                            "elementType": "labels",
-                                            "stylers": [{
-                                                "visibility": "off"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "road.highway",
-                                            "elementType": "geometry.fill",
-                                            "stylers": [{
-                                                "color": "#ffe15f"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "road.highway",
-                                            "elementType": "geometry.stroke",
-                                            "stylers": [{
-                                                "color": "#efd151"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "road.arterial",
-                                            "elementType": "geometry.fill",
-                                            "stylers": [{
-                                                "color": "#ffffff"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "road.local",
-                                            "elementType": "geometry.fill",
-                                            "stylers": [{
-                                                "color": "black"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "transit.station.airport",
-                                            "elementType": "geometry.fill",
-                                            "stylers": [{
-                                                "color": "#cfb2db"
-                                            }]
-                                        },
-                                        {
-                                            "featureType": "water",
-                                            "elementType": "geometry",
-                                            "stylers": [{
-                                                "color": "#a2daf2"
-                                            }]
+                                        icon: "",
+                                        visible: false,
+                                    }
+                                }],
+                                events: {
+                                    click: function (marker, event, context) {
+                                        if (context.data == 0) {
+                                            return;
                                         }
-                                        ]
-
-
+                                        var map = $(this).gmap3("get");
+                                        infowindow = $(this).gmap3({
+                                            get: {
+                                                name: "infowindow"
+                                            }
+                                        });
+                                        if (infowindow) {
+                                            infowindow.open(map, marker);
+                                            infowindow.setContent(context.data);
+                                        } else {
+                                            $(this).gmap3({
+                                                infowindow: {
+                                                    anchor: marker,
+                                                    options: {
+                                                        content: context.data
+                                                    }
+                                                }
+                                            });
+                                        }
                                     }
                                 }
-                            });
-                        }
+
+                            },
+                            overlay: {
+                                values: [{
+                                    address: "40.7590615,-73.969231",
+                                    data: "<div class=\"gmap-marker-wrap\"><h5 class=\"gmap-marker-title\">New Jersey Office<\/h5><div class=\"gmap-marker-content\"><i class=\"ion-android-pin\" aria-hidden=\"true\"><\/i> 799-701 Ballantyne Rd<br \/>\nSyracuse, NY 13207<\/div><\/div>",
+                                    options: {
+                                        content: '<div><div class="animated-dot">' +
+                                            '<div class="middle-dot"><i class="ion-android-pin"></i></div>' +
+                                            '<div class="signal"></div>' +
+                                            '<div class="signal2"></div>' + '</div></div>',
+                                    }
+                                }],
+                                events: {
+                                    click: function (overlay, event, context) {
+                                        if (context.data == 0) {
+                                            return;
+                                        }
+                                        var map = $(this).gmap3("get");
+                                        infowindow = $(this).gmap3({
+                                            get: {
+                                                name: "infowindow"
+                                            }
+                                        });
+                                        if (infowindow) {
+                                            infowindow.open(map, overlay);
+                                            infowindow.setContent(context.data);
+                                        } else {
+                                            $(this).gmap3({
+                                                infowindow: {
+                                                    anchor: overlay,
+                                                    options: {
+                                                        content: context.data
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    }
+                                }
+                            },
+                            map: {
+                                options: {
+                                    zoom: parseInt(gmZoom),
+                                    zoomControl: true,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                    mapTypeControl: false,
+                                    scaleControl: false,
+                                    scrollwheel: gmZoomEnable == 'enable' ? true : false,
+                                    streetViewControl: false,
+                                    draggable: true,
+                                    styles: [{
+                                        "featureType": "landscape.man_made",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#f7f1df"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "landscape.natural",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#d0e3b4"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "landscape.natural.terrain",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi",
+                                        "elementType": "labels",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi.business",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi.medical",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#fbd3da"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi.park",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#bde6ab"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road",
+                                        "elementType": "geometry.stroke",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road",
+                                        "elementType": "labels",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "#ffe15f"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.stroke",
+                                        "stylers": [{
+                                            "color": "#efd151"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.arterial",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "#ffffff"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.local",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "black"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "transit.station.airport",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "#cfb2db"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "water",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#a2daf2"
+                                        }]
+                                    }
+                                    ]
+
+
+                                }
+                            }
+                        });
                     }
-                )(jQuery);
-            });
-        </script>
+                }
+            )(jQuery);
+        });
+    </script>
 
 
-        <!-- Revolution Slider JS -->
-        <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="assets/revolution/revolution-active.js"></script>
+    <!-- Revolution Slider JS -->
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/revolution/revolution-active.js"></script>
 
-        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-        <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 
-        <!--=====  End of JS files ======-->
-        <!-- <script>
+    <!--=====  End of JS files ======-->
+    <!-- <script>
     window.addEventListener('scroll', function() {
     var logo = document.querySelector('.logo');
     if (window.scrollY > 50) { // Ajustez '50' à la position de défilement souhaitée
@@ -1767,45 +1833,45 @@ display: none;
 
 </script> -->
 
-<script>
-   function playVideo() {
-    var image = document.getElementById('staticImage');
-    var video = document.getElementById('videoPlayer');
-    var icon = document.querySelector('.play-icon');
+    <script>
+        function playVideo() {
+            var image = document.getElementById('staticImage');
+            var video = document.getElementById('videoPlayer');
+            var icon = document.querySelector('.play-icon');
 
-    // Cache l'image et l'icône de lecture, et affiche la vidéo
-    image.style.display = 'none';
-    icon.style.display = 'none';
-    video.style.display = 'block';
+            // Cache l'image et l'icône de lecture, et affiche la vidéo
+            image.style.display = 'none';
+            icon.style.display = 'none';
+            video.style.display = 'block';
 
-    // Joue la vidéo
-    video.play();
-}
+            // Joue la vidéo
+            video.play();
+        }
 
 
     </script>
-<script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.header-navigation-area');
-        const logo = document.querySelector('.logob'); // Sélectionner le logo
-        
-        if (window.scrollY <= 250) {
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.header-navigation-area');
+            const logo = document.querySelector('.logob'); // Sélectionner le logo
+
+            if (window.scrollY <= 250) {
+                navbar.classList.add('navbar-transparent');
+                navbar.classList.remove('navbar-white');
+            } else {
+                navbar.classList.add('navbar-white');
+                navbar.classList.remove('navbar-transparent');
+            }
+        });
+
+        // Initialize with transparent class
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.querySelector('.header-navigation-area');
             navbar.classList.add('navbar-transparent');
-            navbar.classList.remove('navbar-white');
-        } else {
-            navbar.classList.add('navbar-white');
-            navbar.classList.remove('navbar-transparent');
-        }
-    });
+        });
+    </script>
 
-    // Initialize with transparent class
-    document.addEventListener('DOMContentLoaded', function() {
-        const navbar = document.querySelector('.header-navigation-area');
-        navbar.classList.add('navbar-transparent');
-    });
-</script>
 
-    
 </body>
 
 </html>

@@ -107,6 +107,11 @@
             margin: 0;
             /* Ajuster les marges si besoin */
         }
+        .ht-btn--transparent--whitee:hover {
+            background-color: #0000001d;
+            color: #ffffff;
+            border-color: #000000;
+        }
     </style>
 
 
@@ -145,7 +150,16 @@
             /* Ajuste cette valeur selon tes préférences */
         }
     </style>
-
+                                <style>
+                                    .swiper-slide img {
+                                        border-radius: 50% !important; /* Makes the image circular */
+                                        width: 120px; /* Adjust the size of the circle */
+                                        height: 120px; /* Keep height equal to width for a perfect circle */
+                                        object-fit: cover; /* Ensures the image fills the circular area without distortion */
+                                        display: block; /* Ensures it renders properly */
+                                        margin: 0 auto; /* Centers the image in the slide */
+                                    }
+                                </style>
 </head>
 
 <body>
@@ -356,17 +370,18 @@
                             <div class="header-navigation header-navigation--header-default position-relative">
                                 <div>
                                     <img src="assets/img/LOGO-ALTEA.svg"
-                                        style="min-height:65px; margin-bottom: 10px; margin-top: 8px;padding-right: 25px;"
+                                        style="min-height:65px; margin-bottom: 10px; margin-top: 8px; margin-left: -60px;"
                                         class="img-fluid logob">
                                 </div>
 
-                                <div class="header-navigation__nav header-navigation__nav--transparent position-static">
+                                <div class="header-navigation__nav header-navigation__nav--transparent position-static"
+                                    style="    display: flex;justify-content: center;">
                                     <nav>
                                         <ul>
-                                            <li class="has-children">
+                                            <li>
                                                 <a href="index-2.html">ACCEUIL</a>
                                             </li>
-                                            <li class="has-children has-children--multilevel-submenu">
+                                            <li>
                                                 <a href="page-about.html">A PROPOS</a>
 
                                             </li>
@@ -390,8 +405,7 @@
                                                     <li><a href="case-study-single-slider.html">Sleeves</a></li>
                                                     <li><a href="case-study-single-gallery.html">Complexes</a></li>
                                                     <li><a href="case-study-single-gallery.html">Produits non
-                                                            imprimés</a>
-                                                    </li>
+                                                            imprimés</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-children">
@@ -441,11 +455,17 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="has-children has-children--multilevel-submenu">
+                                            <li>
                                                 <a href="engagement.html">NOS ENGAGEMENTS</a>
                                             </li>
                                         </ul>
                                     </nav>
+                                </div>
+                                <div>
+                                    <a href="demander-devis.html"
+                                        style=" color: black;  margin-right: -130px;border: 2px solid #000000 !important;"
+                                        class="ht-btn ht-btn--transparent ht-btn--transparent--whitee logob">GET A QUOTE
+                                        <i class="ion-arrow-right-c"></i></a>
                                 </div>
 
                                 <div class="header-navigation__icon header-navigation__icon--transparent">
@@ -518,7 +538,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="">
+                            <div >
                                 <!-- service title wrapper -->
                                 <div class="service-title-wrapper section-space--inner--60">
                                     <h2 class="title">Nos <span class="highlight">Produits</span> </h2>
@@ -721,46 +741,38 @@
                                     </div>
                                 </div>
 
-                                <div class="service-title-wrapper "style="margin-top:7rem;">
-                                    <h2 class="title">Réferences<span class="highlight"></span></h2>
-                    
+                                <div class="service-title-wrapper " style="margin-top:7rem;">
+                                    <h2 class="title">Nos <span class="highlight">Réferences</span></h2>
+
                                 </div>
-                    
-                    
+
+
                                 <!-- brand logo slider -->
                                 <div class="" style="position: relative;">
                                     <div class="brand-logo-slider__container-area " style="margin: 20px;">
-                                        <div class="swiper-container brand-logo-slider__container col-sm-12"
-                                            style="padding-bottom: 55px; padding-top: 55px;">
+                                        <div class="swiper-container brand-logo-slider__container col-sm-12" style="padding-bottom: 55px; padding-top: 55px;">
                                             <div class="swiper-wrapper brand-logo-slider__wrapper">
+                                                <!-- <div class="swiper-slide brand-logo-slider__single">
+                                                    <div class="image">
+                                                        <img src="assets/img/products/yaourt.jpg" class="img-fluid img-cap circular-image" alt="">
+                                                    </div>
+                                                </div> -->
                                                 <div class="swiper-slide brand-logo-slider__single">
                                                     <div class="image">
-                                                        <img src="assets/img/products/yaourt.jpg" class="img-fluid img-cap" alt="">
+                                                        <img src="assets/img/ref-yaourt.jpg" class="img-fluid img-cap circular-image" alt="">
                                                     </div>
-                    
                                                 </div>
                                                 <div class="swiper-slide brand-logo-slider__single">
                                                     <div class="image">
-                                                        <img src="assets/img/ref-yaourt.jpg" class="img-fluid img-cap" alt="">
+                                                        <img src="assets/img/ref-beurre.jpg" class="img-fluid img-cap circular-image" alt="">
                                                     </div>
-                    
                                                 </div>
                                                 <div class="swiper-slide brand-logo-slider__single">
                                                     <div class="image">
-                                                        <img src="assets/img/ref-beurre.jpg" class="img-fluid img-cap" alt="">
+                                                        <img src="assets/img/ref-yaourt2.jpg" class="img-fluid img-cap circular-image" alt="">
                                                     </div>
-                    
                                                 </div>
-                                                <div class="swiper-slide brand-logo-slider__single">
-                                                    <div class="image">
-                                                        <img src="assets/img/ref-yaourt2.jpg" class="img-fluid img-cap" alt="">
-                                                    </div>
-                    
-                                                </div>
-                    
                                             </div>
-                    
-                    
                                         </div>
                                     </div>
                                     <div class="slider-up-divs col-sm-12 h-100">
@@ -769,6 +781,10 @@
                                         <div class="slider-up-div3 col-sm-3"></div>
                                     </div>
                                 </div>
+                                
+                                <!-- Updated CSS to ensure circular images -->
+
+                                
 
 
 
@@ -780,7 +796,7 @@
             </div>
 
 
-            
+
         </div>
     </div>
 
