@@ -160,6 +160,8 @@ iframe {
     width: 85%; /* La largeur de la modal est contrôlée */
     max-width: 900px; /* Limite la largeur maximale */
     height: 70vh;
+    overflow-x: hidden;
+
 
 }
 
@@ -171,6 +173,7 @@ iframe {
     font-weight: bold;
     color: white; /* Bouton blanc pour une meilleure visibilité */
     cursor: pointer;
+    
 }
 .service-title-wrapper {
     margin-top: 30px; /* Ajouter plus d'espace entre l'image et le titre */
@@ -2000,41 +2003,40 @@ iframe {
 
     </script>
     <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.header-navigation-area');
-            const logo = document.querySelector('.logob'); // Sélectionner le logo
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.header-navigation-area');
 
-            if (window.scrollY <= 250) {
-                navbar.classList.add('navbar-transparent');
-                navbar.classList.remove('navbar-white');
-            } else {
-                navbar.classList.add('navbar-white');
-                navbar.classList.remove('navbar-transparent');
-            }
-        });
+    if (window.scrollY <= 250) {
+        navbar.classList.add('navbar-transparent');
+        navbar.classList.remove('navbar-white');
+    } else {
+        navbar.classList.add('navbar-white');
+        navbar.classList.remove('navbar-transparent');
+    }
+});
 
-        let scrollPosition = 0;
+let scrollPosition = 0;
 
 function openVideoPopup(event) {
-    // Empêcher l'action par défaut du lien
     event.preventDefault();
 
     // Mémoriser la position de défilement actuelle
     scrollPosition = window.pageYOffset;
 
-    // Désactiver le défilement du corps
-    document.body.style.overflow = "hidden";
+    // Désactiver le défilement horizontal et vertical du corps
+    document.body.style.overflowY = "hidden";
+    document.body.style.overflowX = "hidden"; // Ajouter cela pour désactiver le défilement horizontal
 
-    // Cacher le navbar
+    // Cacher la barre de navigation
     const navbar = document.querySelector('.header-navigation-area');
-    navbar.style.display = 'none';  // Cacher la barre de navigation
+    navbar.style.display = 'none';
 
     // Ajouter la source de la vidéo
-    var iframe = document.getElementById("youtubePlayer");
+    const iframe = document.getElementById("youtubePlayer");
     iframe.src = "https://www.youtube.com/embed/PXiMYBR19eA?autoplay=1";
 
     // Afficher le modal
-    var modal = document.getElementById("videoModal");
+    const modal = document.getElementById("videoModal");
     modal.style.display = "flex";
 
     // Ajouter un écouteur pour détecter la sortie du plein écran
@@ -2042,15 +2044,16 @@ function openVideoPopup(event) {
 }
 
 function closeVideoPopup() {
-    var modal = document.getElementById("videoModal");
-    var iframe = document.getElementById("youtubePlayer");
+    const modal = document.getElementById("videoModal");
+    const iframe = document.getElementById("youtubePlayer");
 
-    // Réactiver le défilement du corps
-    document.body.style.overflow = "auto";
+    // Réactiver le défilement vertical et horizontal du corps
+    document.body.style.overflowY = "auto";
+    document.body.style.overflowX = "hidden"; // Toujours forcer le overflow-x à hidden
 
-    // Réafficher le navbar
+    // Réafficher la barre de navigation
     const navbar = document.querySelector('.header-navigation-area');
-    navbar.style.display = 'flex';  // Réafficher la barre de navigation
+    navbar.style.display = 'flex';
 
     // Cacher le modal
     modal.style.display = "none";
@@ -2066,10 +2069,10 @@ function closeVideoPopup() {
 }
 
 function outsideClick(event) {
-    var modal = document.getElementById("videoModal");
+    const modal = document.getElementById("videoModal");
 
     // Si l'utilisateur clique en dehors de la modal-content, fermer la modal
-    if (event.target == modal) {
+    if (event.target === modal) {
         closeVideoPopup();
     }
 }
