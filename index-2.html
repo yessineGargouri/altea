@@ -58,7 +58,6 @@
         .section-title-area {
             margin: 0 auto;
             /* Centre le titre */
-            text-align: center;
             /* Assure que le texte est centré */
         }
 
@@ -124,6 +123,87 @@
             color: #ffffff;
             border-color: #000000;
         }
+
+
+        .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond plus sombre */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+iframe {
+    border: none;
+    width: 85%; /* Ajuste la largeur à 80% de l'écran pour un meilleur rendu */
+    height: 70vh; /* Ajuste la hauteur pour maintenir le ratio */
+    max-width: 900px; /* Limiter la largeur maximale pour grands écrans */
+    max-height: 500px; /* Limiter la hauteur maximale */
+    margin: auto;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent plus sombre */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 85%; /* La largeur de la modal est contrôlée */
+    max-width: 900px; /* Limite la largeur maximale */
+    height: 70vh;
+
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white; /* Bouton blanc pour une meilleure visibilité */
+    cursor: pointer;
+}
+.service-title-wrapper {
+    margin-top: 30px; /* Ajouter plus d'espace entre l'image et le titre */
+}
+
+.see-more-link {
+    text-decoration: none;
+    color: #333; /* Assurer que la couleur soit bien appliquée */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.brand-logo-slider__single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 15px; /* Assurer que l'espacement soit homogène */
+}
+
+@media (max-width: 768px) {
+    .see-more-link {
+        font-size: 1rem; /* Ajuste la taille de la police pour les petits écrans */
+    }
+    
+    .service-title-wrapper {
+        margin-top: 15px; /* Ajustement du margin pour mobile */
+    }
+}
+
     </style>
 
 
@@ -345,10 +425,10 @@
                                     style="    display: flex;justify-content: center;">
                                     <nav>
                                         <ul>
-                                            <li >
+                                            <li>
                                                 <a href="index-2.html">ACCEUIL</a>
                                             </li>
-                                            <li >
+                                            <li>
                                                 <a href="page-about.html">A PROPOS</a>
 
                                             </li>
@@ -888,7 +968,7 @@
 
     <!--====================  feature background area ====================-->
 
-    <div class="banner-image-three-area bg-img content-container">
+    <!-- <div class="banner-image-three-area bg-img content-container">
         <div><img class="L-HOME-GREEN" src="assets/img/L-GREEN.svg" height='70'></div>
 
         <div class="container">
@@ -914,18 +994,15 @@
                     <div class="banner-image-three__right" onclick="playVideo()">
                         <div class="banner-image-three__image">
                             <div class="banner-image custom-size">
-                                <!-- Image qui sera remplacée par la vidéo au clic -->
                                 <img src="assets/img/8.webp" id="staticImage" class="classy custom-size img-fluid" alt="">
-                                <!-- Icône de lecture superposée -->
                                 <div class="play-icon"
-                                    style="position: absolute; top: 50%; left: 60%; transform: translate(-50%, -50%); z-index: 2;">
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
                                     <svg width="60" height="60" viewBox="0 0 16 16" class="bi bi-play-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 11.692V4.308a.5.5 0 0 1 .765-.424l6.363 3.692a.5.5 0 0 1 0 .837z" />
                                     </svg>
                                 </div>
-                                <!-- Container pour la vidéo, initialement caché -->
                                 <video id="videoPlayer" class="classy img-fluid" style="display:none;" controls>
                                     <source src="assets/video/cap-gen.mp4" type="video/mp4">
                                     Votre navigateur ne supporte pas la vidéo.
@@ -936,12 +1013,67 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="banner-image-three-area banner-video-area   " style="padding-top: 50px; padding-bottom: 50px;"></div>
+    <div><img class="L-HOME-GREEN" src="assets/img/L-GREEN.svg" height='70'></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="banner-video-area__image">
+                    <img src="assets/img/banner/banner2.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="banner-video-area__content">
+                    <!-- section title -->
+                    <div class="section-title-area">
+
+                        <h2 class="title title--left--style2  title--left--style2--black2"> <span
+                                class="translate-left">Leader <br> depuis <span style="color: #00ac92;">1980 .</span>
+                            </span></h2>
+                        <p class="section-title-content section-title-content--style2">Altea Packaging est le leader des
+                            transformateurs d'emballages flexibles dans la région Maghreb & Moyen Orient, doté d’une
+                            ambition méditerranéenne.
+                            Nous sommes un groupe de PMEs, flexibles et proactives, spécialisées dans le développement,
+                            la transformation et l’impression d’emballage...</p>
+                        <a href="page-about.html"
+                            class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt "
+                            style="text-align: center;margin-left: 50%;">READ MORE <i class="ion-arrow-right-c"></i></a>
+                        <!-- Bouton de lecture de la vidéo -->
+                        <!-- Bouton de lecture de la vidéo -->
+                        <!-- Bouton de lecture de la vidéo -->
+<div class="video-button-container">
+    <a href="#" class="section-title-video-button" onclick="openVideoPopup(event)">
+        <div class="video-play video-play--style2">
+            <i class="ion-ios-play"></i>
+        </div>
+        <div class="video-text video-text--style2">PLAY VIDEO</div>
+    </a>
+</div>
+
+<!-- Popup modal pour afficher la vidéo -->
+<div id="videoModal" class="modal" onclick="outsideClick(event)">
+    <div class="modal-content">
+        <span class="close" onclick="closeVideoPopup()">&times;</span>
+        <iframe id="youtubePlayer" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
 
-
     <!--====================  End of feature background area  ====================-->
-    <div class="service-title-wrapper">
+    <div class="service-title-wrapper" style="padding-top: 120px;">
         <h2 class="title">NOS <span class="highlight">PRODUITS</span></h2>
         <p class="text">Chez Altea Packaging, nous créons des solutions d'emballage flexibles et innovantes pour
             répondre aux besoins variés des marchés du Maghreb et du Moyen-Orient, en alliant qualité et efficacité pour
@@ -950,46 +1082,63 @@
 
 
     <!-- brand logo slider -->
-    <div class="brand-logo-slider__container-area " style="margin: 20px;">
-        <div class="swiper-container brand-logo-slider__container col-sm-12"
-            style="padding-bottom: 55px; padding-top: 55px;">
+    <div class="brand-logo-slider__container-area" style="margin: 20px;">
+        <div class="swiper-container brand-logo-slider__container col-sm-12" style="padding-bottom: 55px; padding-top: 55px;">
             <div class="swiper-wrapper brand-logo-slider__wrapper">
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/Cogimix.svg" class="img-fluid img-cap" alt="">
                     </div>
-
+                    <div class="service-title-wrapper">
+                        <a href="produits.html" class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">
+                            Cogimix
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/complexe.svg" class="img-fluid img-cap" alt="">
                     </div>
-
+                    <div class="service-title-wrapper">
+                        <a href="produits.html" class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">
+                            Complexe
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/etiquettes.svg" class="img-fluid img-cap" alt="">
                     </div>
-
+                    <div class="service-title-wrapper">
+                        <a href="produits.html" class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">
+                            Étiquettes
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/bandrole.svg" class="img-fluid img-cap" alt="">
                     </div>
-
+                    <div class="service-title-wrapper">
+                        <a href="produits.html" class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">
+                            Bandrole
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide brand-logo-slider__single">
                     <div class="image">
                         <img src="assets/img/products/sleeves.svg" class="img-fluid img-cap" alt="">
                     </div>
-
+                    <div class="service-title-wrapper">
+                        <a href="produits.html" class="see-more-link see-more-link--dark see-more-link--dark--style2 see-more-link--dark--style2--alt">
+                            Sleeves
+                        </a>
+                    </div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
+    
     <div class="service-title-wrapper ">
         <a href="produits.html"
             class="  see-more-link see-more-link--dark see-more-link--dark--style2  see-more-link--dark--style2--alt">TOUS
@@ -1014,7 +1163,7 @@
                         </div>
                         <div class="single-industry-grid-two__content">
                             <div class="content-wrapper">
-                                <h2 class="title"><img src="assets/img/icons/milk.png" height="80" class="right-m"><a
+                                <h2 class="title"><img src="assets/img/icons/milko.png" height="80" class="right-m"><a
                                         href="#">Produits Laitiers</a></h2>
                                 <p class="text">Optimisez la sécurité et la fraîcheur des produits laitiers avec nos
                                     solutions d'emballage innovantes qui préservent la qualité tout au long de la chaîne
@@ -1030,7 +1179,7 @@
                             data-bg="assets/img/bestpart/converters.jpg"></div>
                         <div class="single-industry-grid-two__content">
                             <div class="content-wrapper">
-                                <h2 class="title"><img src="assets/img/icons/recycle-sign.png" height="80"
+                                <h2 class="title"><img src="assets/img/icons/recycle-signo.png" height="80"
                                         class="right-m"><a href="#">Agroalimentaire</a></h2>
                                 <p class="text">Améliorez la conservation et la présentation de vos produits
                                     alimentaires avec nos emballages personnalisés qui répondent aux normes les plus
@@ -1112,7 +1261,7 @@
                                 </div>
 
                                 <div class="industry-grid-s swiper-slide industry-four-slider__single-slide swiper-slide-visible grow"
-                                    data-swiper-slide-index="5" >
+                                    data-swiper-slide-index="5">
                                     <div class="image">
                                         <img class="img-fluid .img-card" src="assets/img/cert1.png" />
                                     </div>
@@ -1132,7 +1281,7 @@
                                     </div>
                                 </div>
                                 <div class="industry-grid-s swiper-slide industry-four-slider__single-slide swiper-slide-visible swiper-slide-duplicate-prev grow"
-                                    data-swiper-slide-index="1" >
+                                    data-swiper-slide-index="1">
                                     <div class="image">
                                         <img class="img-fluid .img-card" src="assets/img/cert3.png" />
                                     </div>
@@ -1142,7 +1291,7 @@
                                     </div>
                                 </div>
                                 <div class="industry-grid-s swiper-slide industry-four-slider__single-slide swiper-slide-visible swiper-slide-duplicate-active grow"
-                                    data-swiper-slide-index="2" >
+                                    data-swiper-slide-index="2">
                                     <div class="image">
                                         <img class="img-fluid .img-card" src="assets/img/cert4.png" />
                                     </div>
@@ -1152,7 +1301,7 @@
                                     </div>
                                 </div>
                                 <div class="industry-grid-s swiper-slide industry-four-slider__single-slide swiper-slide-visible swiper-slide-duplicate-next grow"
-                                    data-swiper-slide-index="3" >
+                                    data-swiper-slide-index="3">
                                     <div class="image">
                                         <img class="img-fluid .img-card" src="assets/img/cert5.png" />
                                     </div>
@@ -1864,11 +2013,74 @@
             }
         });
 
-        // Initialize with transparent class
-        document.addEventListener('DOMContentLoaded', function () {
-            const navbar = document.querySelector('.header-navigation-area');
-            navbar.classList.add('navbar-transparent');
-        });
+        let scrollPosition = 0;
+
+function openVideoPopup(event) {
+    // Empêcher l'action par défaut du lien
+    event.preventDefault();
+
+    // Mémoriser la position de défilement actuelle
+    scrollPosition = window.pageYOffset;
+
+    // Désactiver le défilement du corps
+    document.body.style.overflow = "hidden";
+
+    // Cacher le navbar
+    const navbar = document.querySelector('.header-navigation-area');
+    navbar.style.display = 'none';  // Cacher la barre de navigation
+
+    // Ajouter la source de la vidéo
+    var iframe = document.getElementById("youtubePlayer");
+    iframe.src = "https://www.youtube.com/embed/PXiMYBR19eA?autoplay=1";
+
+    // Afficher le modal
+    var modal = document.getElementById("videoModal");
+    modal.style.display = "flex";
+
+    // Ajouter un écouteur pour détecter la sortie du plein écran
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+}
+
+function closeVideoPopup() {
+    var modal = document.getElementById("videoModal");
+    var iframe = document.getElementById("youtubePlayer");
+
+    // Réactiver le défilement du corps
+    document.body.style.overflow = "auto";
+
+    // Réafficher le navbar
+    const navbar = document.querySelector('.header-navigation-area');
+    navbar.style.display = 'flex';  // Réafficher la barre de navigation
+
+    // Cacher le modal
+    modal.style.display = "none";
+
+    // Réinitialiser la source de l'iframe pour arrêter la vidéo
+    iframe.src = "";
+
+    // Revenir à la position de défilement mémorisée
+    window.scrollTo(0, scrollPosition);
+
+    // Supprimer l'écouteur d'événements de plein écran
+    document.removeEventListener('fullscreenchange', handleFullscreenChange);
+}
+
+function outsideClick(event) {
+    var modal = document.getElementById("videoModal");
+
+    // Si l'utilisateur clique en dehors de la modal-content, fermer la modal
+    if (event.target == modal) {
+        closeVideoPopup();
+    }
+}
+
+function handleFullscreenChange() {
+    if (!document.fullscreenElement) {
+        // Si l'utilisateur quitte le plein écran, ramener la page à la position initiale
+        window.scrollTo(0, scrollPosition);
+    }
+}
+
     </script>
 
 
