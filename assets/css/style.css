@@ -19767,9 +19767,9 @@ only screen and (max-width: 767px) {
 
 .L-HOME-GREEN {
   position: absolute;
-  height: 38%;
+  height: 58%;
   right: 0%;
-  transform: translate(33%, 175%);
+  transform: translate(33%, 4%);
   -webkit-animation: pop_out 1s;
   -o-animation: pop_out 1s;
   animation: pop_out 1s;
