@@ -5172,6 +5172,7 @@ only screen and (max-width: 767px) {
   border: 1px solid #ddd;
   padding: 0 15px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .footer-widget__newsletter input:focus {
@@ -5999,6 +6000,7 @@ only screen and (max-width: 767px) {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   border: none;
+  border-radius: 20px;
 }
 
 .ht-btn--default:hover {
