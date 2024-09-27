@@ -20095,3 +20095,10 @@ only screen and (max-width: 767px) {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+@media(max-width: 768px){
+  .blr{
+    border:1px solid rgba(238, 238, 238, 0.13);
+    padding-top: 30px;
+    padding-bottom:2%;
+  }
+}
