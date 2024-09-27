@@ -20102,4 +20102,31 @@ only screen and (max-width: 767px) {
     padding-bottom:2%;
     border-radius:2rem;
   }
+  .blrs::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: -7px;
+    bottom: -9px;
+    background: url(https://www.altea-packaging.com/packages/altea_theme/themes/altea_theme/img/sep-nav.png) no-repeat 0px 0px;
+  }
+  .blrss::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    right: -7px;
+    bottom: -9px;
+    background: url(https://www.altea-packaging.com/packages/altea_theme/themes/altea_theme/img/sep-nav.png) no-repeat 0px 0px;
+  }
+  .blrs::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: -7px;
+    top: -9px;
+    background: url(https://www.altea-packaging.com/packages/altea_theme/themes/altea_theme/img/sep-nav.png) no-repeat 0px 0px;
+  }
 }
