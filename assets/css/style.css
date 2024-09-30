@@ -10252,7 +10252,11 @@ only screen and (max-width: 767px) {
   visibility: visible;
   scale: 1.3;
 }
-
+.brand-logo-slider__single:hover .see-more-link {
+  visibility: visible;
+  scale: 1.3;
+  color:#00a98f ;
+}
 
 .brand-logo-grid__single {
   border: 1px solid #eee;
@@ -20130,3 +20134,8 @@ only screen and (max-width: 767px) {
     background: url(https://www.altea-packaging.com/packages/altea_theme/themes/altea_theme/img/sep-nav.png) no-repeat 0px 0px;
   }
 }
+
+
+
+
+
