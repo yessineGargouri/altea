@@ -1006,7 +1006,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+html{
+  overflow-x:hidden;
+}
 html,
 body {
   height: 100%;
@@ -20135,6 +20137,11 @@ only screen and (max-width: 767px) {
     top: -9px;
     background: url(https://www.altea-packaging.com/packages/altea_theme/themes/altea_theme/img/sep-nav.png) no-repeat 0px 0px;
   }
+}
+.cardy{
+  border-radius: 2rem;
+    width: 90%;
+    margin: auto;
 }
 
 
