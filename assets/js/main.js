@@ -613,9 +613,7 @@
       speed: 1000,
       watchSlidesVisibility: true,
       spaceBetween: 30,
-      autoplay: {
-        delay: 3000
-      },
+      autoplay: false,
 
       // Responsive breakpoints
       breakpoints: {
