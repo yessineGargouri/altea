@@ -19784,9 +19784,9 @@ only screen and (max-width: 767px) {
 
 .L-HOME-GREEN {
   position: absolute;
-  height: 40%;
+  height: 79%;
   right: 0%;
-  transform: translate(39%, 50%);
+  transform: translate(33%, 26%);
   -webkit-animation: pop_out 1s;
   -o-animation: pop_out 1s;
   animation: pop_out 1s;
@@ -19880,9 +19880,11 @@ only screen and (max-width: 767px) {
 
 .P-GREEN {
   position: absolute;
-  height: 19%;
+  z-index: 5;
+  height: 20%;
   right: 8%;
   margin-top: -9%;
+  transform: translate(5%, 37%);
   -webkit-animation: pop_out 1s;
   -o-animation: pop_out 1s;
   animation: pop_out 1s;
