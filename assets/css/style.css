@@ -1007,7 +1007,7 @@
   box-sizing: border-box;
 }
 html{
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
 }
 html,
 body {
