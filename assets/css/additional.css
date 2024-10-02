@@ -559,7 +559,13 @@ body {
     height: 295px;
 }
 .my-10{
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
+}
+.my-9{
+    margin-bottom: 5rem;
+}
+.my-11{
+    margin-bottom: 5rem;
 }
 .card-title-h3 {
     padding-top: 12px;
@@ -568,9 +574,18 @@ body {
     top: 0;
     left: 1rem;
 }
+
 .card-info-bottom {
     padding: 0px 25px 30px;
 }
 .ml20{
     margin-left: 19%;
+}
+
+.img-headers3 {
+    background-image: url(../img/bestpart/converters.jpg);
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
