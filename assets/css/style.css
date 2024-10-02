@@ -1007,7 +1007,7 @@
   box-sizing: border-box;
 }
 html{
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
 }
 html,
 body {
@@ -14741,6 +14741,7 @@ only screen and (max-width: 767px) {
 }
 
 .single-industry-icon--style2 .single-industry-icon__content .see-more-link {
+  border-radius: 1rem 0;
   visibility: visible;
   opacity: 1;
   width: 100%;
@@ -14763,6 +14764,7 @@ only screen and (max-width: 767px) {
 .single-industry-icon--style2:hover {
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.09);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.09);
+  scale: 1.05;
 }
 
 .single-industry-icon--style2:hover .single-industry-icon__content {
